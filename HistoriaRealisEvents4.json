@@ -50,7 +50,7 @@
         "Who": "Creator",
         "Type": "Change",
         "What": "Gold",
-        "Value": -50
+        "Value": -100
       },
       {
         "When": "Success",
@@ -71,7 +71,7 @@
         "When": "Creating",
         "What": "Gold",
         "Comparison": ">=",
-        "Value": 50
+        "Value": 100
       }
     ]
   },
