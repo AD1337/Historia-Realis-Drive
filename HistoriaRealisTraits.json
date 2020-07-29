@@ -1,1 +1,1576 @@
-{"Reference":{"Reference":{},"Bather":{},"Business":{},"Commander":{},"Crops":{},"Divine Ancestor":{},"Sample":{},"Has Gladiator":{},"Helpful":{},"Honestas":{},"Gladiatorial Bodyguard":{},"Fighter":{},"Land Size":{},"Law":{},"Lawfulness":{},"Loyal":{},"Kind":{},"Ordo":{},"Organized":{},"Personality":{},"Poet":{},"Social Mobility":{},"Scheming":{},"Stressed":{},"Social Class":{},"Social":{},"Social Rank":{},"Trainer":{},"Reputation":{},"Sober":{},"Fit":{},"Land Type":{},"Land Fertility":{},"Agriculture Gods":{},"Orator":{},"Memory":{},"Rider":{},"Warlike":{},"Conspirator":{},"Hunter":{},"Injured":{},"Distraction":{},"Tongue":{},"Has Assassin":{},"Murderer":{},"Training":{},"Oratory Tutor":{},"Oratory Style":{},"Writer":{},"Blessings":{},"Religious":{},"Epicurean":{},"Gambler":{},"Stoic":{},"Fortuna":{},"Honorable":{},"Has Shrine At Home":{},"OFFICES":{},"Elected":{},"-- CURSUS HONORUM --":{},"Senator":{},"Consul":{},"Praetor":{},"Aedile":{},"Quaestor":{},"Tribunus Plebis":{},"Ex Consul":{},"Ex Praetor":{},"Ex Aedile":{},"Ex Quaestor":{},"Ex Tribunus Plebis":{}},"Bather":{"-3":{"Name":"Filthy","Martialis":1,"Oratoria":-1,"Health":-3,"Attractiveness":-3},"-2":{"Name":"Scruffy","Health":-1,"Attractiveness":-2},"-1":{"Name":"Unkempt","Attractiveness":-1},"1":{"Name":"Regular at the Baths","Oratoria":1,"Health":1},"2":{"Name":"Hygienic","Oratoria":1,"Health":2,"Attractiveness":1},"3":{"Name":"Pristine","Oratoria":1,"Health":3,"Attractiveness":2}},"Business":{"-3":{"Name":"Lavish","Administratio":-3},"-2":{"Name":"Wastrel","Administratio":-2},"-1":{"Name":"Extravagant","Administratio":-1},"1":{"Name":"Thrifty","Administratio":1},"2":{"Name":"Negotiator","Administratio":2},"3":{"Name":"Administrator","Administratio":3}},"Commander":{"2":{"Name":"Imposing Commander","Description":"Your word on the battlefield carries great pride and morale!","Martialis":2},"1":{"Name":"Confident Commander","Description":"Those you lead have faith in your firm words.","Martialis":1},"-1":{"Name":"Unconfident Commander","Description":"Eyebrows raise at the majority of your requests.","Martialis":-1},"-2":{"Name":"Incompetent Commander","Description":"You would be lucky if any soldier turned to you when you spoke.","Martialis":-2}},"Crops":{"1":{"Name":"Ripe Crops","Administratio":-1},"2":{"Name":"Growing Crops","Administratio":-2},"3":{"Name":"Sowing Crops","Administratio":-3}},"Divine Ancestor":{"Info":{"Name":"Equals"},"1":{"Name":"Descendant of Venus"},"2":{"Name":"Descendant of Jupiter"},"3":{"Name":"Descendant of Romulus"},"4":{"Name":"Descendant of Juno"}},"Sample":{"1":{"Name":"Strategist","Description":"$Char.Name quietly plots world domination.","Astutia":6,"Administratio":4,"Pietas":-3},"2":{"Name":"Thinker","Martialis":-4,"Oratoria":5,"Administratio":6},"3":{"Name":"Assertive","Martialis":6,"Oratoria":3,"Pietas":-2},"4":{"Name":"Outspoken","Oratoria":12,"Astutia":-2,"Administratio":-4}},"Has Gladiator":{"7":{"Name":"Has Famous Gladiator","Dignitas":5},"6":{"Name":"Has Veteran Gladiator","Dignitas":4},"5":{"Name":"Has Skillful Gladiator","Dignitas":3},"4":{"Name":"Has Capable Gladiator","Dignitas":2},"3":{"Name":"Has Novice Gladiator","Dignitas":1},"2":{"Name":"Has Weak Gladiator","Dignitas":-1},"1":{"Name":"Has Puny Gladiator","Description":"My gladiator is a Noxius, a hurtful one, useless for combat.","Dignitas":-2}},"Helpful":{"-3":{"Name":"Indifferent","Pietas":-3},"-2":{"Name":"Unhelpful","Pietas":-2},"-1":{"Name":"Inopportune","Pietas":-1},"1":{"Name":"Caring","Pietas":1},"2":{"Name":"Supportive","Pietas":2},"3":{"Name":"Beneficent","Pietas":3}},"Honestas":{"-2":{"Name":"Liar","Oratoria":-3,"Astutia":2},"-1":{"Name":"Dishonest","Oratoria":-1,"Astutia":1},"1":{"Name":"Trustworthy","Astutia":-1,"Pietas":1},"2":{"Name":"Honest","Astutia":-2,"Pietas":2},"3":{"Name":"Incorruptible","Astutia":-3,"Pietas":3},"4":{"Name":"Bastion of Truth","Astutia":-4,"Pietas":4}},"Gladiatorial Bodyguard":{"":{},"2":{"Name":"Gladiatorial Bodyguard II","Martialis":2,"Dignitas":-1},"1":{"Name":"Gladiatorial Bodyguard I","Martialis":1,"Dignitas":-1}},"Fighter":{"3":{"Name":"Veteran Fighter","Description":"No man who faces you can dream of emerging victorious!","Martialis":3},"2":{"Name":"Stalwart Fighter","Description":"Hopeful fighters see you as a strong opponent.","Martialis":2},"1":{"Name":"Rookie Fighter","Description":"You stand your ground and fight, a tried and true fighter.","Martialis":1},"-1":{"Name":"Basic Fighter","Description":"You can fight with most opponents, but are nothing special.","Martialis":-1},"-2":{"Name":"Clumsy Fighter","Description":"Your strikes sometimes land, and other times miss completely.","Martialis":-2},"-3":{"Name":"Weak Fighter","Description":"A river fish would have an easier time fighting an opponent than you.","Martialis":-3}},"Land Size":{"-3":{"Name":"Landless","Administratio":-3},"-2":{"Name":"Farm in Shambles","Administratio":-2},"-1":{"Name":"Rocky Farm","Administratio":-1},"1":{"Name":"Small Farm","Administratio":1},"2":{"Name":"Large Farm","Administratio":2},"3":{"Name":"Latifundia","Administratio":3}},"Law":{"-3":{"Name":"Legal Failure","Oratoria":-3},"-2":{"Name":"Inept Lawyer","Oratoria":-2},"-1":{"Name":"Bad Lawyer","Oratoria":-1},"1":{"Name":"Lawyer","Oratoria":1},"2":{"Name":"Jurist","Description":"Some are lawyers. That is not enough for me. I am not a mere lawyer, I am a jurist.","Oratoria":2},"3":{"Name":"Legal Expert","Oratoria":3,"Dignitas":1}},"Lawfulness":{"-2":{"Name":"Lawless","Astutia":2},"-1":{"Name":"Unruly","Astutia":1},"1":{"Name":"Lawful","Oratoria":1,"Astutia":-1,"Pietas":1},"2":{"Name":"Constitutionalist","Oratoria":2,"Astutia":-2,"Pietas":1}},"Loyal":{"-3":{"Name":"Fides Punica"},"-2":{"Name":"Disloyal"},"-1":{"Name":"Untrustworthy"},"1":{"Name":"Trustworthy","Administratio":-1},"2":{"Name":"Loyal","Administratio":-2},"3":{"Name":"Fides","Administratio":-3}},"Kind":{"-3":{"Name":"Hateful"},"-2":{"Name":"Bitter"},"-1":{"Name":"Envious"},"1":{"Name":"Caring"},"2":{"Name":"Supportive"},"3":{"Name":"Compassionate"}},"Ordo":{"2":{"Name":"Senatorial","Dignitas":3},"1":{"Name":"Equites","Dignitas":2},"-1":{"Name":"First Class","Dignitas":1},"-2":{"Name":"Second Class","Dignitas":-2},"-3":{"Name":"Third Class","Dignitas":-3},"-4":{"Name":"Fourth Class","Dignitas":-4},"-5":{"Name":"Fifth Class","Dignitas":-5},"-6":{"Name":"Proletarii","Dignitas":-6},"-7":{"Name":"Libertii","Dignitas":-7}},"Organized":{"4":{"Name":"Methodical","Administratio":4,"Dignitas":1},"3":{"Name":"Orderly","Administratio":3,"Dignitas":1},"2":{"Name":"Planner","Administratio":2},"1":{"Name":"Tidy","Administratio":1},"-1":{"Name":"Messy","Administratio":-1,"Attractiveness":-1},"-2":{"Name":"Careless","Administratio":-2,"Attractiveness":-1},"-3":{"Name":"Disorganized","Administratio":-3,"Attractiveness":-1},"-4":{"Name":"Chaotic","Astutia":1,"Administratio":-4}},"Personality":{"":{},"1":{"Name":"Strategist","Astutia":7,"Administratio":3,"Pietas":-3},"2":{"Name":"Thinker","Martialis":-4,"Oratoria":4,"Administratio":7},"3":{"Name":"Assertive","Martialis":6,"Oratoria":3,"Pietas":-2},"4":{"Name":"Outspoken","Oratoria":4,"Astutia":3},"5":{"Name":"Protector","Astutia":3,"Pietas":4},"6":{"Name":"Idealist","Martialis":5,"Administratio":-3,"Pietas":5},"7":{"Name":"Heroic","Martialis":5,"Astutia":-4,"Pietas":6},"8":{"Name":"Inspiring","Martialis":4,"Oratoria":7,"Astutia":-4},"9":{"Name":"Dutiful","Martialis":3,"Administratio":1,"Pietas":3},"10":{"Name":"Defender","Martialis":4,"Astutia":-3,"Pietas":6},"11":{"Name":"Upstanding","Astutia":-5,"Administratio":8,"Pietas":4},"12":{"Name":"Provider","Oratoria":-3,"Administratio":6,"Pietas":4},"13":{"Name":"Creative","Martialis":-2,"Astutia":5,"Administratio":4},"14":{"Name":"Adventurer","Martialis":6,"Astutia":6,"Administratio":-5},"15":{"Name":"Builder","Martialis":-2,"Astutia":6,"Administratio":3},"16":{"Name":"Performer","Martialis":-2,"Oratoria":7,"Astutia":5,"Administratio":-3}},"Poet":{"2":{"Name":"Great Poet","Oratoria":3,"Attractiveness":2},"1":{"Name":"Good Poet","Oratoria":2,"Attractiveness":1},"-1":{"Name":"Bad Poet","Oratoria":-2,"Attractiveness":-1},"-2":{"Name":"Terrible Poet","Oratoria":-3,"Attractiveness":-2}},"Social Mobility":{"-3":{"Name":"Falling Star","Dignitas":-3},"-2":{"Name":"Downward Trend","Dignitas":-2},"-1":{"Name":"Losing Space","Dignitas":-1},"1":{"Name":"Promising Future","Dignitas":1},"2":{"Name":"Upward Trend","Dignitas":2},"3":{"Name":"Rising Star","Dignitas":3},"4":{"Name":"Social Climber","Dignitas":4},"5":{"Name":"Social Alpinist","Dignitas":5}},"Scheming":{"-3":{"Name":"Guileless","Astutia":-3,"Pietas":1},"-2":{"Name":"Trusting","Astutia":-2,"Pietas":1},"-1":{"Name":"Naive","Astutia":-1},"1":{"Name":"Sly","Astutia":1},"2":{"Name":"Deceitful","Astutia":2},"3":{"Name":"Devious","Astutia":3}},"Stressed":{"2":{"Name":"Very Stressed","Health":2},"1":{"Name":"Stressed","Health":1},"-1":{"Name":"Relaxed","Health":-1},"-2":{"Name":"Very Relaxed","Health":-2}},"Social Class":{"-1":{"Name":"Plebeian","Dignitas":-1},"1":{"Name":"Patrician","Dignitas":1}},"Social":{"-3":{"Name":"Recluse","Oratoria":-1,"Health":-2},"-2":{"Name":"Lonely","Oratoria":-1,"Health":-1},"-1":{"Name":"Shy","Oratoria":-1},"1":{"Name":"Social","Oratoria":1},"2":{"Name":"Gregarious","Oratoria":2},"3":{"Name":"Life of the Party","Oratoria":3}},"Social Rank":{"":{},"1":{"Name":"Nobilis","Dignitas":1}},"Trainer":{"3":{"Name":"Drillmaster","Martialis":2,"Dignitas":1},"2":{"Name":"War Instructor","Martialis":2},"1":{"Name":"Trainer","Martialis":1}},"Reputation":{"-3":{"Name":"Disgraced","Dignitas":-3},"-2":{"Name":"Infamous","Dignitas":-2},"-1":{"Name":"Unpopular","Dignitas":-1},"1":{"Name":"Popular","Dignitas":1},"2":{"Name":"Famous","Dignitas":2},"3":{"Name":"Esteemed","Dignitas":3}},"Sober":{"-3":{"Name":"Drunkard","Administratio":-1,"Health":-5},"-2":{"Name":"Heavy Drinker","Administratio":-1,"Health":-1},"-1":{"Name":"Social Drinker","Oratoria":1},"1":{"Name":"Drinks Little","Health":1},"2":{"Name":"Austere","Administratio":1,"Health":2},"3":{"Name":"Teetotal","Administratio":2,"Health":3},"4":{"Name":"Sober","Health":3}},"Fit":{"":{},"-2":{"Name":"Sedentary","Martialis":-1},"-1":{"Name":"Lazy","Martialis":-1},"1":{"Name":"Active","Martialis":1},"2":{"Name":"Athletic","Martialis":2}},"Land Type":{"-2":{"Name":"Sandy Soil"},"-1":{"Name":"Rocky Soil"},"1":{"Name":"Dry Soil"},"2":{"Name":"Volcanic Soil"},"3":{"Name":"Moist Soil"}},"Land Fertility":{"-2":{"Name":"Barren Land"},"-1":{"Name":"Infertile Land"},"1":{"Name":"Fertile Land"},"2":{"Name":"Lush Land"}},"Agriculture Gods":{"1":{"Name":"Growth of Consus","Administratio":1},"2":{"Name":"Growth of Vertumnus","Administratio":2},"3":{"Name":"Growth of Ceres","Administratio":3,"Pietas":1}},"Orator":{"3":{"Name":"Divine Spokesman","Description":"Even the gods would heed your every word!","Oratoria":3,"Dignitas":3},"2":{"Name":"Rhetorician","Description":"Your speeches turn heads and convert minds.","Oratoria":2,"Dignitas":2},"1":{"Name":"Good Orator","Description":"People stop to listen to what you have to say.","Oratoria":1,"Dignitas":1},"-1":{"Name":"Poor Orator","Description":"Voicing yourself falls on indifferent ears.","Oratoria":-1,"Dignitas":-1},"-2":{"Name":"Terrible Orator","Description":"The people know you as little more than an empty voice.","Oratoria":-2,"Dignitas":-2},"-3":{"Name":"Painful Orator","Description":"No matter the object, it will be thrown at you when you speak.","Oratoria":-3,"Dignitas":-3}},"Memory":{"-2":{"Name":"Amnesic","Oratoria":-2,"Health":-1},"-1":{"Name":"Forgetful","Oratoria":-1},"1":{"Name":"Reliable Memory","Oratoria":1},"2":{"Name":"Mnemonic Artist","Oratoria":2},"3":{"Name":"Memorized the Odyssey","Martialis":1,"Oratoria":1,"Astutia":1,"Dignitas":1}},"Rider":{"2":{"Name":"Proper Gallop","Description":"Your form on horseback rivals the legends of old!","Martialis":2,"Dignitas":1},"1":{"Name":"Sure Gallop","Description":"You are a confident equine handler.","Martialis":1},"-1":{"Name":"Wobbly Gallop","Description":"Stability on horseback is an art you still seek to develop.","Martialis":-1},"-2":{"Name":"Unstable Gallop","Description":"It is a wonder the gods haven't struck you off your horse yet.","Martialis":-2,"Dignitas":-1}},"Warlike":{"2":{"Name":"Loves War","Martialis":2},"1":{"Name":"Likes War","Martialis":1},"-1":{"Name":"Dislikes War","Martialis":-1},"-2":{"Name":"Hates War","Martialis":-2}},"Conspirator":{"3":{"Name":"Shadowy Conspirator","Description":"No matter how hard some may try, your plots are as elusive as Mercury himself!","Astutia":3,"Dignitas":-1},"2":{"Name":"Secretive Conspirator","Description":"Some prying eyes cannot see past your shadowy veil.","Astutia":2,"Dignitas":-2},"1":{"Name":"Rookie Conspirator","Description":"You hold your own in a band of shadowy figures.","Astutia":1,"Dignitas":-3},"-1":{"Name":"Basic Conspirator","Description":"You look out of place in a group of huddled together men.","Astutia":-1,"Dignitas":-4},"-2":{"Name":"Blatant Conspirator","Description":"Secrets are not safe with you, and you often blurt out well-kept plots.","Astutia":-2,"Dignitas":-5},"-3":{"Name":"Public Conspirator","Description":"Whether it is out of bravery or stupidity, you practically announce to the citizens your nefarious plans.","Astutia":-3,"Dignitas":-6}},"Hunter":{"3":{"Name":"Great Hunter","Martialis":3},"2":{"Name":"Good Hunter","Martialis":2},"1":{"Name":"Hunter","Martialis":1},"-1":{"Name":"Poor Hunter","Martialis":-1},"-2":{"Name":"Very Bad Hunter","Martialis":-2},"-3":{"Name":"Terrible Hunter","Martialis":-3}},"Injured":{"2":{"Name":"Very Healthy","Health":2},"1":{"Name":"Healthy","Health":1},"-1":{"Name":"Injured","Martialis":-1,"Health":-2},"-2":{"Name":"Bad Injury","Martialis":-2,"Health":-3},"-3":{"Name":"Dying","Martialis":-3,"Health":-4}},"Distraction":{"3":{"Name":"Insufferable Distraction","Description":"By the gods, I'll sell you my estate if you stop your annoyances!","Astutia":3,"Dignitas":-3,"Attractiveness":-3},"2":{"Name":"Annoying Distraction","Description":"People wish you would go away, even when they know you won't walk away so easily.","Astutia":2,"Dignitas":-2,"Attractiveness":-2},"1":{"Name":"Distraction","Description":"If it's a distraction you want to be, you can definitely be a distraction.","Astutia":1,"Dignitas":-1,"Attractiveness":-1},"-1":{"Name":"Non-Distraction","Description":"You are unable to pull anyone away from their preoccupations.","Astutia":-1,"Dignitas":1,"Attractiveness":1},"-2":{"Name":"Invisible Distraction","Description":"If a man was watching grass grow, it would be impossible for you to get his attention.","Astutia":-2,"Dignitas":2,"Attractiveness":2}},"Tongue":{"2":{"Name":"Silver Tongue","Astutia":2,"Dignitas":1},"1":{"Astutia":1,"Dignitas":0},"-1":{"Astutia":-1,"Dignitas":-1},"-2":{"Name":"Lame Tongue","Astutia":-2,"Dignitas":-2}},"Has Assassin":{"3":{"Name":"Solid Murder Plans"},"2":{"Name":"Murder Plans"},"1":{"Name":"Knows a Guy","Description":"You have signed on a man of the deadly arts, ready to kill whoever you deem worthy of death.","Dignitas":-1}},"Murderer":{"1":{"Name":"Murderer","Astutia":1,"Pietas":-2}},"Training":{"1":{"Name":"Began Training","Description":"You are devoting yourself to learning the art of combat.","Health":-1},"2":{"Name":"Hard Training","Health":-2},"3":{"Name":"Trained","Health":1}},"Oratory Tutor":{"-2":{"Name":"Spartan Tutor","Martialis":2,"Oratoria":-3,"Health":1},"-1":{"Name":"Roman Tutor","Martialis":1,"Oratoria":-1},"1":{"Name":"Ionian Tutor","Oratoria":1},"2":{"Name":"Rhodian Tutor","Oratoria":2},"3":{"Name":"Athenian Tutor","Martialis":-1,"Oratoria":3}},"Oratory Style":{"-1":{"Name":"Asiatic Style","Oratoria":1,"Administratio":-1},"1":{"Name":"Attic Style","Oratoria":1}},"Writer":{"1":{"Name":"Writer","Description":"You are skiled, even flamboyant, with a pen. Your words can be kind, or cruel.","Oratoria":4,"Dignitas":2}},"Blessings":{"5":{"Name":"Child of Jupiter","Oratoria":3},"4":{"Name":"Chosen by Mars","Martialis":3},"3":{"Name":"Mercury's Blessing","Astutia":3},"2":{"Name":"Friend of Minerva","Administratio":3},"1":{"Name":"Neptune's Wisdom","Pietas":3}},"Religious":{"3":{"Name":"Devout","Pietas":3},"2":{"Name":"Pious","Pietas":2},"1":{"Name":"Spritual","Pietas":1},"-1":{"Name":"Skeptical","Pietas":-1},"-2":{"Name":"Atheist","Pietas":-2}},"Epicurean":{"3":{"Name":"Epicurus Himself","Oratoria":2,"Astutia":1,"Pietas":-3},"2":{"Name":"Follower of Epicurus","Oratoria":1,"Astutia":1,"Pietas":-2},"1":{"Name":"Epicurean","Astutia":1,"Pietas":-1},"-1":{"Name":"Dislikes Epicurus","Oratoria":-1,"Pietas":1},"-2":{"Name":"Hates Epicurus","Oratoria":-2,"Astutia":-1,"Pietas":2}},"Gambler":{"1":{"Name":"Gambler","Astutia":1,"Administratio":-1}},"Stoic":{"5":{"Name":"Bastion of Virtue","Oratoria":2,"Astutia":-2,"Pietas":3},"4":{"Name":"Stoic Master","Oratoria":1,"Astutia":-1,"Pietas":2},"3":{"Name":"Stoic","Oratoria":1,"Astutia":-2,"Pietas":2},"2":{"Name":"Stoic Initiate","Astutia":-1,"Pietas":1},"1":{"Name":"Learning Stoicism","Astutia":-2,"Pietas":1},"-1":{"Name":"Indulgent","Astutia":1,"Pietas":-2},"-2":{"Name":"Hedonist","Astutia":2,"Pietas":-3}},"Fortuna":{"3":{"Name":"Felix","Pietas":3},"2":{"Name":"Auspicious","Pietas":2},"1":{"Name":"Lucky","Pietas":1},"-1":{"Name":"Unlucky","Pietas":-1},"-2":{"Name":"Unfortunate","Pietas":-2}},"Honorable":{"3":{"Name":"Honest-to-gods","Astutia":-3,"Pietas":3},"2":{"Name":"Forthright","Astutia":-2,"Pietas":2},"1":{"Name":"Aboveboard","Astutia":-1,"Pietas":1},"-1":{"Name":"Shady","Astutia":1,"Pietas":-1},"-2":{"Name":"Bad Company","Astutia":2,"Pietas":-2},"-3":{"Name":"Thug Life","Astutia":3,"Pietas":-3}},"Has Shrine At Home":{"1":{"Name":"Has Shrine At Home","Pietas":2}},"OFFICES":{},"Elected":{"1":{"Name":"Elected","Dignitas":2}},"-- CURSUS HONORUM --":{},"Senator":{"1":{"Name":"Senator","Dignitas":3}},"Consul":{"1":{"Name":"Consul","Martialis":3,"Oratoria":3,"Dignitas":15}},"Praetor":{"1":{"Name":"Praetor","Martialis":2,"Oratoria":1,"Dignitas":10}},"Aedile":{"1":{"Name":"Aedile","Administratio":3,"Dignitas":7}},"Quaestor":{"1":{"Name":"Quaestor","Martialis":1,"Dignitas":5}},"Tribunus Plebis":{"1":{"Name":"Tribunus Plebis","Astutia":1,"Dignitas":5}},"Ex Consul":{"1":{"Name":"Ex Consul","Dignitas":1},"2":{"Name":"COS II","Dignitas":2},"3":{"Name":"COS III","Dignitas":3},"4":{"Name":"COS IV","Dignitas":4},"5":{"Name":"COS V","Dignitas":5},"6":{"Name":"COS VI","Dignitas":6},"7":{"Name":"COS VII","Dignitas":7},"8":{"Name":"COS VIII","Dignitas":8},"9":{"Name":"COS IX","Dignitas":9},"10":{"Name":"COS X","Dignitas":10}},"Ex Praetor":{"1":{"Name":"Ex Praetor","Dignitas":1}},"Ex Aedile":{"1":{"Name":"Ex Aedile","Dignitas":1}},"Ex Quaestor":{"1":{"Name":"Ex Quaestor","Dignitas":1}},"Ex Tribunus Plebis":{"1":{"Name":"Ex Tribunus Plebis","Dignitas":1}}}
+{
+  "Reference": {
+    "Reference": {},
+    "Bather": {},
+    "Business": {},
+    "Commander": {},
+    "Crops": {},
+    "Divine Ancestor": {},
+    "Sample": {},
+    "Has Gladiator": {},
+    "Helpful": {},
+    "Honestas": {},
+    "Gladiatorial Bodyguard": {},
+    "Fighter": {},
+    "Land Size": {},
+    "Law": {},
+    "Lawfulness": {},
+    "Loyal": {},
+    "Kind": {},
+    "Ordo": {},
+    "Organized": {},
+    "Personality": {},
+    "Poet": {},
+    "Social Mobility": {},
+    "Scheming": {},
+    "Stressed": {},
+    "Social Class": {},
+    "Social": {},
+    "Social Rank": {},
+    "Trainer": {},
+    "Reputation": {},
+    "Sober": {},
+    "Fit": {},
+    "Land Type": {},
+    "Land Fertility": {},
+    "Agriculture Gods": {},
+    "Orator": {},
+    "Memory": {},
+    "Rider": {},
+    "Warlike": {},
+    "Conspirator": {},
+    "Hunter": {},
+    "Injured": {},
+    "Distraction": {},
+    "Tongue": {},
+    "Has Assassin": {},
+    "Murderer": {},
+    "Training": {},
+    "Oratory Tutor": {},
+    "Oratory Style": {},
+    "Writer": {},
+    "Blessings": {},
+    "Religious": {},
+    "Epicurean": {},
+    "Gambler": {},
+    "Stoic": {},
+    "Fortuna": {},
+    "Honorable": {},
+    "Has Shrine At Home": {},
+    "OFFICES": {},
+    "Elected": {},
+    "-- CURSUS HONORUM --": {},
+    "Senator": {},
+    "Consul": {},
+    "Praetor": {},
+    "Aedile": {},
+    "Quaestor": {},
+    "Tribunus Plebis": {},
+    "Ex Consul": {},
+    "Ex Praetor": {},
+    "Ex Aedile": {},
+    "Ex Quaestor": {},
+    "Ex Tribunus Plebis": {}
+  },
+  "Agriculture Gods": {
+    "1": {
+      "Name": "Growth of Consus",
+      "Administratio": 1
+    },
+    "2": {
+      "Name": "Growth of Vertumnus",
+      "Administratio": 2
+    },
+    "3": {
+      "Name": "Growth of Ceres",
+      "Administratio": 3,
+      "Pietas": 1
+    }
+  },
+  "Bather": {
+    "-3": {
+      "Name": "Filthy",
+      "Martialis": 1,
+      "Oratoria": -1,
+      "Health": -3,
+      "Attractiveness": -3
+    },
+    "-2": {
+      "Name": "Scruffy",
+      "Health": -1,
+      "Attractiveness": -2
+    },
+    "-1": {
+      "Name": "Unkempt",
+      "Attractiveness": -1
+    },
+    "1": {
+      "Name": "Regular at the Baths",
+      "Oratoria": 1,
+      "Health": 1
+    },
+    "2": {
+      "Name": "Hygienic",
+      "Oratoria": 1,
+      "Health": 2,
+      "Attractiveness": 1
+    },
+    "3": {
+      "Name": "Pristine",
+      "Oratoria": 1,
+      "Health": 3,
+      "Attractiveness": 2
+    }
+  },
+  "Business": {
+    "-3": {
+      "Name": "Lavish",
+      "Administratio": -3
+    },
+    "-2": {
+      "Name": "Wastrel",
+      "Administratio": -2
+    },
+    "-1": {
+      "Name": "Extravagant",
+      "Administratio": -1
+    },
+    "1": {
+      "Name": "Thrifty",
+      "Administratio": 1
+    },
+    "2": {
+      "Name": "Negotiator",
+      "Administratio": 2
+    },
+    "3": {
+      "Name": "Administrator",
+      "Administratio": 3
+    }
+  },
+  "Commander": {
+    "2": {
+      "Name": "Imposing Commander",
+      "Description": "Your word on the battlefield carries great pride and morale!",
+      "Martialis": 2
+    },
+    "1": {
+      "Name": "Confident Commander",
+      "Description": "Those you lead have faith in your firm words.",
+      "Martialis": 1
+    },
+    "-1": {
+      "Name": "Unconfident Commander",
+      "Description": "Eyebrows raise at the majority of your requests.",
+      "Martialis": -1
+    },
+    "-2": {
+      "Name": "Incompetent Commander",
+      "Description": "You would be lucky if any soldier turned to you when you spoke.",
+      "Martialis": -2
+    }
+  },
+  "Crops": {
+    "1": {
+      "Name": "Ripe Crops",
+      "Administratio": -1
+    },
+    "2": {
+      "Name": "Growing Crops",
+      "Administratio": -2
+    },
+    "3": {
+      "Name": "Sowing Crops",
+      "Administratio": -3
+    }
+  },
+  "Divine Ancestor": {
+    "Info": {
+      "Name": "Equals"
+    },
+    "1": {
+      "Name": "Descendant of Venus"
+    },
+    "2": {
+      "Name": "Descendant of Jupiter"
+    },
+    "3": {
+      "Name": "Descendant of Romulus"
+    },
+    "4": {
+      "Name": "Descendant of Juno"
+    }
+  },
+  "Sample": {
+    "1": {
+      "Name": "Strategist",
+      "Description": "$Char.Name quietly plots world domination.",
+      "Astutia": 6,
+      "Administratio": 4,
+      "Pietas": -3
+    },
+    "2": {
+      "Name": "Thinker",
+      "Martialis": -4,
+      "Oratoria": 5,
+      "Administratio": 6
+    },
+    "3": {
+      "Name": "Assertive",
+      "Martialis": 6,
+      "Oratoria": 3,
+      "Pietas": -2
+    },
+    "4": {
+      "Name": "Outspoken",
+      "Oratoria": 12,
+      "Astutia": -2,
+      "Administratio": -4
+    }
+  },
+  "Has Assassin": {
+    "3": {
+      "Name": "Solid Murder Plans"
+    },
+    "2": {
+      "Name": "Murder Plans"
+    },
+    "1": {
+      "Name": "Knows a Guy",
+      "Description": "You have signed on a man of the deadly arts, ready to kill whoever you deem worthy of death.",
+      "Dignitas": -1
+    }
+  },
+  "Has Gladiator": {
+    "7": {
+      "Name": "Has Famous Gladiator",
+      "Dignitas": 5
+    },
+    "6": {
+      "Name": "Has Veteran Gladiator",
+      "Dignitas": 4
+    },
+    "5": {
+      "Name": "Has Skillful Gladiator",
+      "Dignitas": 3
+    },
+    "4": {
+      "Name": "Has Capable Gladiator",
+      "Dignitas": 2
+    },
+    "3": {
+      "Name": "Has Novice Gladiator",
+      "Dignitas": 1
+    },
+    "2": {
+      "Name": "Has Weak Gladiator",
+      "Dignitas": -1
+    },
+    "1": {
+      "Name": "Has Puny Gladiator",
+      "Description": "My gladiator is a Noxius, a hurtful one, useless for combat.",
+      "Dignitas": -2
+    }
+  },
+  "Has Rental Properties": {
+    "3": {
+      "Name": "Lives Off Rental",
+      "Administratio": 3
+    },
+    "2": {
+      "Name": "Rental Tycoon",
+      "Administratio": 2
+    },
+    "1": {
+      "Name": "Landlord",
+      "Administratio": 1
+    }
+  },
+  "Helpful": {
+    "-3": {
+      "Name": "Indifferent",
+      "Pietas": -3
+    },
+    "-2": {
+      "Name": "Unhelpful",
+      "Pietas": -2
+    },
+    "-1": {
+      "Name": "Inopportune",
+      "Pietas": -1
+    },
+    "1": {
+      "Name": "Caring",
+      "Pietas": 1
+    },
+    "2": {
+      "Name": "Supportive",
+      "Pietas": 2
+    },
+    "3": {
+      "Name": "Beneficent",
+      "Pietas": 3
+    }
+  },
+  "Honestas": {
+    "-2": {
+      "Name": "Liar",
+      "Oratoria": -3,
+      "Astutia": 2
+    },
+    "-1": {
+      "Name": "Dishonest",
+      "Oratoria": -1,
+      "Astutia": 1
+    },
+    "1": {
+      "Name": "Trustworthy",
+      "Astutia": -1,
+      "Pietas": 1
+    },
+    "2": {
+      "Name": "Honest",
+      "Astutia": -2,
+      "Pietas": 2
+    },
+    "3": {
+      "Name": "Incorruptible",
+      "Astutia": -3,
+      "Pietas": 3
+    },
+    "4": {
+      "Name": "Bastion of Truth",
+      "Astutia": -4,
+      "Pietas": 4
+    }
+  },
+  "Honorable": {
+    "3": {
+      "Name": "Honest-to-gods",
+      "Astutia": -3,
+      "Pietas": 3
+    },
+    "2": {
+      "Name": "Forthright",
+      "Astutia": -2,
+      "Pietas": 2
+    },
+    "1": {
+      "Name": "Aboveboard",
+      "Astutia": -1,
+      "Pietas": 1
+    },
+    "-1": {
+      "Name": "Shady",
+      "Astutia": 1,
+      "Pietas": -1
+    },
+    "-2": {
+      "Name": "Bad Company",
+      "Astutia": 2,
+      "Pietas": -2
+    },
+    "-3": {
+      "Name": "Thug Life",
+      "Astutia": 3,
+      "Pietas": -3
+    }
+  },
+  "Gladiatorial Bodyguard": {
+    "": {},
+    "2": {
+      "Name": "Gladiatorial Bodyguard II",
+      "Martialis": 2,
+      "Dignitas": -1
+    },
+    "1": {
+      "Name": "Gladiatorial Bodyguard I",
+      "Martialis": 1,
+      "Dignitas": -1
+    }
+  },
+  "Fighter": {
+    "3": {
+      "Name": "Veteran Fighter",
+      "Description": "No man who faces you can dream of emerging victorious!",
+      "Martialis": 3
+    },
+    "2": {
+      "Name": "Stalwart Fighter",
+      "Description": "Hopeful fighters see you as a strong opponent.",
+      "Martialis": 2
+    },
+    "1": {
+      "Name": "Rookie Fighter",
+      "Description": "You stand your ground and fight, a tried and true fighter.",
+      "Martialis": 1
+    },
+    "-1": {
+      "Name": "Basic Fighter",
+      "Description": "You can fight with most opponents, but are nothing special.",
+      "Martialis": -1
+    },
+    "-2": {
+      "Name": "Clumsy Fighter",
+      "Description": "Your strikes sometimes land, and other times miss completely.",
+      "Martialis": -2
+    },
+    "-3": {
+      "Name": "Weak Fighter",
+      "Description": "A river fish would have an easier time fighting an opponent than you.",
+      "Martialis": -3
+    }
+  },
+  "Land Size": {
+    "-3": {
+      "Name": "Landless",
+      "Administratio": -3
+    },
+    "-2": {
+      "Name": "Farm in Shambles",
+      "Administratio": -2
+    },
+    "-1": {
+      "Name": "Rocky Farm",
+      "Administratio": -1
+    },
+    "1": {
+      "Name": "Small Farm",
+      "Administratio": 1
+    },
+    "2": {
+      "Name": "Large Farm",
+      "Administratio": 2
+    },
+    "3": {
+      "Name": "Latifundia",
+      "Administratio": 3
+    }
+  },
+  "Law": {
+    "-3": {
+      "Name": "Legal Failure",
+      "Oratoria": -3
+    },
+    "-2": {
+      "Name": "Inept Lawyer",
+      "Oratoria": -2
+    },
+    "-1": {
+      "Name": "Bad Lawyer",
+      "Oratoria": -1
+    },
+    "1": {
+      "Name": "Lawyer",
+      "Oratoria": 1
+    },
+    "2": {
+      "Name": "Jurist",
+      "Description": "Some are lawyers. That is not enough for me. I am not a mere lawyer, I am a jurist.",
+      "Oratoria": 2
+    },
+    "3": {
+      "Name": "Legal Expert",
+      "Oratoria": 3,
+      "Dignitas": 1
+    }
+  },
+  "Lawfulness": {
+    "-2": {
+      "Name": "Lawless",
+      "Astutia": 2
+    },
+    "-1": {
+      "Name": "Unruly",
+      "Astutia": 1
+    },
+    "1": {
+      "Name": "Lawful",
+      "Oratoria": 1,
+      "Astutia": -1,
+      "Pietas": 1
+    },
+    "2": {
+      "Name": "Constitutionalist",
+      "Oratoria": 2,
+      "Astutia": -2,
+      "Pietas": 1
+    }
+  },
+  "Loyal": {
+    "-3": {
+      "Name": "Fides Punica"
+    },
+    "-2": {
+      "Name": "Disloyal"
+    },
+    "-1": {
+      "Name": "Untrustworthy"
+    },
+    "1": {
+      "Name": "Trustworthy",
+      "Administratio": -1
+    },
+    "2": {
+      "Name": "Loyal",
+      "Administratio": -2
+    },
+    "3": {
+      "Name": "Fides",
+      "Administratio": -3
+    }
+  },
+  "Kind": {
+    "-3": {
+      "Name": "Hateful"
+    },
+    "-2": {
+      "Name": "Bitter"
+    },
+    "-1": {
+      "Name": "Envious"
+    },
+    "1": {
+      "Name": "Caring"
+    },
+    "2": {
+      "Name": "Supportive"
+    },
+    "3": {
+      "Name": "Compassionate"
+    }
+  },
+  "Ordo": {
+    "2": {
+      "Name": "Senatorial",
+      "Dignitas": 3
+    },
+    "1": {
+      "Name": "Equites",
+      "Dignitas": 2
+    },
+    "-1": {
+      "Name": "First Class",
+      "Dignitas": 1
+    },
+    "-2": {
+      "Name": "Second Class",
+      "Dignitas": -2
+    },
+    "-3": {
+      "Name": "Third Class",
+      "Dignitas": -3
+    },
+    "-4": {
+      "Name": "Fourth Class",
+      "Dignitas": -4
+    },
+    "-5": {
+      "Name": "Fifth Class",
+      "Dignitas": -5
+    },
+    "-6": {
+      "Name": "Proletarii",
+      "Dignitas": -6
+    },
+    "-7": {
+      "Name": "Libertii",
+      "Dignitas": -7
+    }
+  },
+  "Organized": {
+    "4": {
+      "Name": "Methodical",
+      "Administratio": 4,
+      "Dignitas": 1
+    },
+    "3": {
+      "Name": "Orderly",
+      "Administratio": 3,
+      "Dignitas": 1
+    },
+    "2": {
+      "Name": "Planner",
+      "Administratio": 2
+    },
+    "1": {
+      "Name": "Tidy",
+      "Administratio": 1
+    },
+    "-1": {
+      "Name": "Messy",
+      "Administratio": -1,
+      "Attractiveness": -1
+    },
+    "-2": {
+      "Name": "Careless",
+      "Administratio": -2,
+      "Attractiveness": -1
+    },
+    "-3": {
+      "Name": "Disorganized",
+      "Administratio": -3,
+      "Attractiveness": -1
+    },
+    "-4": {
+      "Name": "Chaotic",
+      "Astutia": 1,
+      "Administratio": -4
+    }
+  },
+  "Personality": {
+    "": {},
+    "1": {
+      "Name": "Strategist",
+      "Astutia": 7,
+      "Administratio": 3,
+      "Pietas": -3
+    },
+    "2": {
+      "Name": "Thinker",
+      "Martialis": -4,
+      "Oratoria": 4,
+      "Administratio": 7
+    },
+    "3": {
+      "Name": "Assertive",
+      "Martialis": 6,
+      "Oratoria": 3,
+      "Pietas": -2
+    },
+    "4": {
+      "Name": "Outspoken",
+      "Oratoria": 4,
+      "Astutia": 3
+    },
+    "5": {
+      "Name": "Protector",
+      "Astutia": 3,
+      "Pietas": 4
+    },
+    "6": {
+      "Name": "Idealist",
+      "Martialis": 5,
+      "Administratio": -3,
+      "Pietas": 5
+    },
+    "7": {
+      "Name": "Heroic",
+      "Martialis": 5,
+      "Astutia": -4,
+      "Pietas": 6
+    },
+    "8": {
+      "Name": "Inspiring",
+      "Martialis": 4,
+      "Oratoria": 7,
+      "Astutia": -4
+    },
+    "9": {
+      "Name": "Dutiful",
+      "Martialis": 3,
+      "Administratio": 1,
+      "Pietas": 3
+    },
+    "10": {
+      "Name": "Defender",
+      "Martialis": 4,
+      "Astutia": -3,
+      "Pietas": 6
+    },
+    "11": {
+      "Name": "Upstanding",
+      "Astutia": -5,
+      "Administratio": 8,
+      "Pietas": 4
+    },
+    "12": {
+      "Name": "Provider",
+      "Oratoria": -3,
+      "Administratio": 6,
+      "Pietas": 4
+    },
+    "13": {
+      "Name": "Creative",
+      "Martialis": -2,
+      "Astutia": 5,
+      "Administratio": 4
+    },
+    "14": {
+      "Name": "Adventurer",
+      "Martialis": 6,
+      "Astutia": 6,
+      "Administratio": -5
+    },
+    "15": {
+      "Name": "Builder",
+      "Martialis": -2,
+      "Astutia": 6,
+      "Administratio": 3
+    },
+    "16": {
+      "Name": "Performer",
+      "Martialis": -2,
+      "Oratoria": 7,
+      "Astutia": 5,
+      "Administratio": -3
+    }
+  },
+  "Poet": {
+    "2": {
+      "Name": "Great Poet",
+      "Oratoria": 3,
+      "Attractiveness": 2
+    },
+    "1": {
+      "Name": "Good Poet",
+      "Oratoria": 2,
+      "Attractiveness": 1
+    },
+    "-1": {
+      "Name": "Bad Poet",
+      "Oratoria": -2,
+      "Attractiveness": -1
+    },
+    "-2": {
+      "Name": "Terrible Poet",
+      "Oratoria": -3,
+      "Attractiveness": -2
+    }
+  },
+  "Social Mobility": {
+    "-3": {
+      "Name": "Falling Star",
+      "Dignitas": -3
+    },
+    "-2": {
+      "Name": "Downward Trend",
+      "Dignitas": -2
+    },
+    "-1": {
+      "Name": "Losing Space",
+      "Dignitas": -1
+    },
+    "1": {
+      "Name": "Promising Future",
+      "Dignitas": 1
+    },
+    "2": {
+      "Name": "Upward Trend",
+      "Dignitas": 2
+    },
+    "3": {
+      "Name": "Rising Star",
+      "Dignitas": 3
+    },
+    "4": {
+      "Name": "Social Climber",
+      "Dignitas": 4
+    },
+    "5": {
+      "Name": "Social Alpinist",
+      "Dignitas": 5
+    }
+  },
+  "Scheming": {
+    "-3": {
+      "Name": "Guileless",
+      "Astutia": -3,
+      "Pietas": 1
+    },
+    "-2": {
+      "Name": "Trusting",
+      "Astutia": -2,
+      "Pietas": 1
+    },
+    "-1": {
+      "Name": "Naive",
+      "Astutia": -1
+    },
+    "1": {
+      "Name": "Sly",
+      "Astutia": 1
+    },
+    "2": {
+      "Name": "Deceitful",
+      "Astutia": 2
+    },
+    "3": {
+      "Name": "Devious",
+      "Astutia": 3
+    }
+  },
+  "Stressed": {
+    "2": {
+      "Name": "Very Stressed",
+      "Health": 2
+    },
+    "1": {
+      "Name": "Stressed",
+      "Health": 1
+    },
+    "-1": {
+      "Name": "Relaxed",
+      "Health": -1
+    },
+    "-2": {
+      "Name": "Very Relaxed",
+      "Health": -2
+    }
+  },
+  "Social Class": {
+    "-1": {
+      "Name": "Plebeian",
+      "Dignitas": -1
+    },
+    "1": {
+      "Name": "Patrician",
+      "Dignitas": 1
+    }
+  },
+  "Social": {
+    "-3": {
+      "Name": "Recluse",
+      "Oratoria": -1,
+      "Health": -2
+    },
+    "-2": {
+      "Name": "Lonely",
+      "Oratoria": -1,
+      "Health": -1
+    },
+    "-1": {
+      "Name": "Shy",
+      "Oratoria": -1
+    },
+    "1": {
+      "Name": "Social",
+      "Oratoria": 1
+    },
+    "2": {
+      "Name": "Gregarious",
+      "Oratoria": 2
+    },
+    "3": {
+      "Name": "Life of the Party",
+      "Oratoria": 3
+    }
+  },
+  "Social Rank": {
+    "": {},
+    "1": {
+      "Name": "Nobilis",
+      "Dignitas": 1
+    }
+  },
+  "Trainer": {
+    "3": {
+      "Name": "Drillmaster",
+      "Martialis": 2,
+      "Dignitas": 1
+    },
+    "2": {
+      "Name": "War Instructor",
+      "Martialis": 2
+    },
+    "1": {
+      "Name": "Trainer",
+      "Martialis": 1
+    }
+  },
+  "Reputation": {
+    "-3": {
+      "Name": "Disgraced",
+      "Dignitas": -3
+    },
+    "-2": {
+      "Name": "Infamous",
+      "Dignitas": -2
+    },
+    "-1": {
+      "Name": "Unpopular",
+      "Dignitas": -1
+    },
+    "1": {
+      "Name": "Popular",
+      "Dignitas": 1
+    },
+    "2": {
+      "Name": "Famous",
+      "Dignitas": 2
+    },
+    "3": {
+      "Name": "Esteemed",
+      "Dignitas": 3
+    }
+  },
+  "Sober": {
+    "-3": {
+      "Name": "Drunkard",
+      "Administratio": -1,
+      "Health": -5
+    },
+    "-2": {
+      "Name": "Heavy Drinker",
+      "Administratio": -1,
+      "Health": -1
+    },
+    "-1": {
+      "Name": "Social Drinker",
+      "Oratoria": 1
+    },
+    "1": {
+      "Name": "Drinks Little",
+      "Health": 1
+    },
+    "2": {
+      "Name": "Austere",
+      "Administratio": 1,
+      "Health": 2
+    },
+    "3": {
+      "Name": "Teetotal",
+      "Administratio": 2,
+      "Health": 3
+    },
+    "4": {
+      "Name": "Sober",
+      "Health": 3
+    }
+  },
+  "Fit": {
+    "": {},
+    "-2": {
+      "Name": "Sedentary",
+      "Martialis": -1
+    },
+    "-1": {
+      "Name": "Lazy",
+      "Martialis": -1
+    },
+    "1": {
+      "Name": "Active",
+      "Martialis": 1
+    },
+    "2": {
+      "Name": "Athletic",
+      "Martialis": 2
+    }
+  },
+  "Land Type": {
+    "-2": {
+      "Name": "Sandy Soil"
+    },
+    "-1": {
+      "Name": "Rocky Soil"
+    },
+    "1": {
+      "Name": "Dry Soil"
+    },
+    "2": {
+      "Name": "Volcanic Soil"
+    },
+    "3": {
+      "Name": "Moist Soil"
+    }
+  },
+  "Land Fertility": {
+    "-2": {
+      "Name": "Barren Land"
+    },
+    "-1": {
+      "Name": "Infertile Land"
+    },
+    "1": {
+      "Name": "Fertile Land"
+    },
+    "2": {
+      "Name": "Lush Land"
+    }
+  },
+  "Orator": {
+    "3": {
+      "Name": "Divine Spokesman",
+      "Description": "Even the gods would heed your every word!",
+      "Oratoria": 3,
+      "Dignitas": 3
+    },
+    "2": {
+      "Name": "Rhetorician",
+      "Description": "Your speeches turn heads and convert minds.",
+      "Oratoria": 2,
+      "Dignitas": 2
+    },
+    "1": {
+      "Name": "Good Orator",
+      "Description": "People stop to listen to what you have to say.",
+      "Oratoria": 1,
+      "Dignitas": 1
+    },
+    "-1": {
+      "Name": "Poor Orator",
+      "Description": "Voicing yourself falls on indifferent ears.",
+      "Oratoria": -1,
+      "Dignitas": -1
+    },
+    "-2": {
+      "Name": "Terrible Orator",
+      "Description": "The people know you as little more than an empty voice.",
+      "Oratoria": -2,
+      "Dignitas": -2
+    },
+    "-3": {
+      "Name": "Painful Orator",
+      "Description": "No matter the object, it will be thrown at you when you speak.",
+      "Oratoria": -3,
+      "Dignitas": -3
+    }
+  },
+  "Memory": {
+    "-2": {
+      "Name": "Amnesic",
+      "Oratoria": -2,
+      "Health": -1
+    },
+    "-1": {
+      "Name": "Forgetful",
+      "Oratoria": -1
+    },
+    "1": {
+      "Name": "Reliable Memory",
+      "Oratoria": 1
+    },
+    "2": {
+      "Name": "Mnemonic Artist",
+      "Oratoria": 2
+    },
+    "3": {
+      "Name": "Memorized the Odyssey",
+      "Martialis": 1,
+      "Oratoria": 1,
+      "Astutia": 1,
+      "Dignitas": 1
+    }
+  },
+  "Rider": {
+    "2": {
+      "Name": "Proper Gallop",
+      "Description": "Your form on horseback rivals the legends of old!",
+      "Martialis": 2,
+      "Dignitas": 1
+    },
+    "1": {
+      "Name": "Sure Gallop",
+      "Description": "You are a confident equine handler.",
+      "Martialis": 1
+    },
+    "-1": {
+      "Name": "Wobbly Gallop",
+      "Description": "Stability on horseback is an art you still seek to develop.",
+      "Martialis": -1
+    },
+    "-2": {
+      "Name": "Unstable Gallop",
+      "Description": "It is a wonder the gods haven't struck you off your horse yet.",
+      "Martialis": -2,
+      "Dignitas": -1
+    }
+  },
+  "Warlike": {
+    "2": {
+      "Name": "Loves War",
+      "Martialis": 2
+    },
+    "1": {
+      "Name": "Likes War",
+      "Martialis": 1
+    },
+    "-1": {
+      "Name": "Dislikes War",
+      "Martialis": -1
+    },
+    "-2": {
+      "Name": "Hates War",
+      "Martialis": -2
+    }
+  },
+  "Conspirator": {
+    "3": {
+      "Name": "Shadowy Conspirator",
+      "Description": "No matter how hard some may try, your plots are as elusive as Mercury himself!",
+      "Astutia": 3,
+      "Dignitas": -1
+    },
+    "2": {
+      "Name": "Secretive Conspirator",
+      "Description": "Some prying eyes cannot see past your shadowy veil.",
+      "Astutia": 2,
+      "Dignitas": -2
+    },
+    "1": {
+      "Name": "Rookie Conspirator",
+      "Description": "You hold your own in a band of shadowy figures.",
+      "Astutia": 1,
+      "Dignitas": -3
+    },
+    "-1": {
+      "Name": "Basic Conspirator",
+      "Description": "You look out of place in a group of huddled together men.",
+      "Astutia": -1,
+      "Dignitas": -4
+    },
+    "-2": {
+      "Name": "Blatant Conspirator",
+      "Description": "Secrets are not safe with you, and you often blurt out well-kept plots.",
+      "Astutia": -2,
+      "Dignitas": -5
+    },
+    "-3": {
+      "Name": "Public Conspirator",
+      "Description": "Whether it is out of bravery or stupidity, you practically announce to the citizens your nefarious plans.",
+      "Astutia": -3,
+      "Dignitas": -6
+    }
+  },
+  "Hunter": {
+    "3": {
+      "Name": "Great Hunter",
+      "Martialis": 3
+    },
+    "2": {
+      "Name": "Good Hunter",
+      "Martialis": 2
+    },
+    "1": {
+      "Name": "Hunter",
+      "Martialis": 1
+    },
+    "-1": {
+      "Name": "Poor Hunter",
+      "Martialis": -1
+    },
+    "-2": {
+      "Name": "Very Bad Hunter",
+      "Martialis": -2
+    },
+    "-3": {
+      "Name": "Terrible Hunter",
+      "Martialis": -3
+    }
+  },
+  "Injured": {
+    "2": {
+      "Name": "Very Healthy",
+      "Health": 2
+    },
+    "1": {
+      "Name": "Healthy",
+      "Health": 1
+    },
+    "-1": {
+      "Name": "Injured",
+      "Martialis": -1,
+      "Health": -2
+    },
+    "-2": {
+      "Name": "Bad Injury",
+      "Martialis": -2,
+      "Health": -3
+    },
+    "-3": {
+      "Name": "Dying",
+      "Martialis": -3,
+      "Health": -4
+    }
+  },
+  "Distraction": {
+    "3": {
+      "Name": "Insufferable Distraction",
+      "Description": "By the gods, I'll sell you my estate if you stop your annoyances!",
+      "Astutia": 3,
+      "Dignitas": -3,
+      "Attractiveness": -3
+    },
+    "2": {
+      "Name": "Annoying Distraction",
+      "Description": "People wish you would go away, even when they know you won't walk away so easily.",
+      "Astutia": 2,
+      "Dignitas": -2,
+      "Attractiveness": -2
+    },
+    "1": {
+      "Name": "Distraction",
+      "Description": "If it's a distraction you want to be, you can definitely be a distraction.",
+      "Astutia": 1,
+      "Dignitas": -1,
+      "Attractiveness": -1
+    },
+    "-1": {
+      "Name": "Non-Distraction",
+      "Description": "You are unable to pull anyone away from their preoccupations.",
+      "Astutia": -1,
+      "Dignitas": 1,
+      "Attractiveness": 1
+    },
+    "-2": {
+      "Name": "Invisible Distraction",
+      "Description": "If a man was watching grass grow, it would be impossible for you to get his attention.",
+      "Astutia": -2,
+      "Dignitas": 2,
+      "Attractiveness": 2
+    }
+  },
+  "Tongue": {
+    "2": {
+      "Name": "Silver Tongue",
+      "Astutia": 2,
+      "Dignitas": 1
+    },
+    "1": {
+      "Astutia": 1,
+      "Dignitas": 0
+    },
+    "-1": {
+      "Astutia": -1,
+      "Dignitas": -1
+    },
+    "-2": {
+      "Name": "Lame Tongue",
+      "Astutia": -2,
+      "Dignitas": -2
+    }
+  },
+  "Murderer": {
+    "1": {
+      "Name": "Murderer",
+      "Astutia": 1,
+      "Pietas": -2
+    }
+  },
+  "Training": {
+    "1": {
+      "Name": "Began Training",
+      "Description": "You are devoting yourself to learning the art of combat.",
+      "Health": -1
+    },
+    "2": {
+      "Name": "Hard Training",
+      "Health": -2
+    },
+    "3": {
+      "Name": "Trained",
+      "Health": 1
+    }
+  },
+  "Oratory Tutor": {
+    "-2": {
+      "Name": "Spartan Tutor",
+      "Martialis": 2,
+      "Oratoria": -3,
+      "Health": 1
+    },
+    "-1": {
+      "Name": "Roman Tutor",
+      "Martialis": 1,
+      "Oratoria": -1
+    },
+    "1": {
+      "Name": "Ionian Tutor",
+      "Oratoria": 1
+    },
+    "2": {
+      "Name": "Rhodian Tutor",
+      "Oratoria": 2
+    },
+    "3": {
+      "Name": "Athenian Tutor",
+      "Martialis": -1,
+      "Oratoria": 3
+    }
+  },
+  "Oratory Style": {
+    "-1": {
+      "Name": "Asiatic Style",
+      "Oratoria": 1,
+      "Administratio": -1
+    },
+    "1": {
+      "Name": "Attic Style",
+      "Oratoria": 1
+    }
+  },
+  "Writer": {
+    "1": {
+      "Name": "Writer",
+      "Description": "You are skiled, even flamboyant, with a pen. Your words can be kind, or cruel.",
+      "Oratoria": 4,
+      "Dignitas": 2
+    }
+  },
+  "Blessings": {
+    "5": {
+      "Name": "Child of Jupiter",
+      "Oratoria": 3
+    },
+    "4": {
+      "Name": "Chosen by Mars",
+      "Martialis": 3
+    },
+    "3": {
+      "Name": "Mercury's Blessing",
+      "Astutia": 3
+    },
+    "2": {
+      "Name": "Friend of Minerva",
+      "Administratio": 3
+    },
+    "1": {
+      "Name": "Neptune's Wisdom",
+      "Pietas": 3
+    }
+  },
+  "Religious": {
+    "3": {
+      "Name": "Devout",
+      "Pietas": 3
+    },
+    "2": {
+      "Name": "Pious",
+      "Pietas": 2
+    },
+    "1": {
+      "Name": "Spritual",
+      "Pietas": 1
+    },
+    "-1": {
+      "Name": "Skeptical",
+      "Pietas": -1
+    },
+    "-2": {
+      "Name": "Atheist",
+      "Pietas": -2
+    }
+  },
+  "Epicurean": {
+    "3": {
+      "Name": "Epicurus Himself",
+      "Oratoria": 2,
+      "Astutia": 1,
+      "Pietas": -3
+    },
+    "2": {
+      "Name": "Follower of Epicurus",
+      "Oratoria": 1,
+      "Astutia": 1,
+      "Pietas": -2
+    },
+    "1": {
+      "Name": "Epicurean",
+      "Astutia": 1,
+      "Pietas": -1
+    },
+    "-1": {
+      "Name": "Dislikes Epicurus",
+      "Oratoria": -1,
+      "Pietas": 1
+    },
+    "-2": {
+      "Name": "Hates Epicurus",
+      "Oratoria": -2,
+      "Astutia": -1,
+      "Pietas": 2
+    }
+  },
+  "Stoic": {
+    "5": {
+      "Name": "Bastion of Virtue",
+      "Oratoria": 2,
+      "Astutia": -2,
+      "Pietas": 3
+    },
+    "4": {
+      "Name": "Stoic Master",
+      "Oratoria": 1,
+      "Astutia": -1,
+      "Pietas": 2
+    },
+    "3": {
+      "Name": "Stoic",
+      "Oratoria": 1,
+      "Astutia": -2,
+      "Pietas": 2
+    },
+    "2": {
+      "Name": "Stoic Initiate",
+      "Astutia": -1,
+      "Pietas": 1
+    },
+    "1": {
+      "Name": "Learning Stoicism",
+      "Astutia": -2,
+      "Pietas": 1
+    },
+    "-1": {
+      "Name": "Indulgent",
+      "Astutia": 1,
+      "Pietas": -2
+    },
+    "-2": {
+      "Name": "Hedonist",
+      "Astutia": 2,
+      "Pietas": -3
+    }
+  },
+  "Gambler": {
+    "1": {
+      "Name": "Gambler",
+      "Astutia": 1,
+      "Administratio": -1
+    }
+  },
+  "Fortuna": {
+    "3": {
+      "Name": "Felix",
+      "Pietas": 3
+    },
+    "2": {
+      "Name": "Auspicious",
+      "Pietas": 2
+    },
+    "1": {
+      "Name": "Lucky",
+      "Pietas": 1
+    },
+    "-1": {
+      "Name": "Unlucky",
+      "Pietas": -1
+    },
+    "-2": {
+      "Name": "Unfortunate",
+      "Pietas": -2
+    }
+  },
+  "Has Shrine At Home": {
+    "1": {
+      "Name": "Has Shrine At Home",
+      "Pietas": 2
+    }
+  },
+  "OFFICES": {},
+  "Elected": {
+    "1": {
+      "Name": "Elected",
+      "Dignitas": 2
+    }
+  },
+  "-- CURSUS HONORUM --": {},
+  "Senator": {
+    "1": {
+      "Name": "Senator",
+      "Dignitas": 3
+    }
+  },
+  "Consul": {
+    "1": {
+      "Name": "Consul",
+      "Martialis": 3,
+      "Oratoria": 3,
+      "Dignitas": 15
+    }
+  },
+  "Praetor": {
+    "1": {
+      "Name": "Praetor",
+      "Martialis": 2,
+      "Oratoria": 1,
+      "Dignitas": 10
+    }
+  },
+  "Aedile": {
+    "1": {
+      "Name": "Aedile",
+      "Administratio": 3,
+      "Dignitas": 7
+    }
+  },
+  "Quaestor": {
+    "1": {
+      "Name": "Quaestor",
+      "Martialis": 1,
+      "Dignitas": 5
+    }
+  },
+  "Tribunus Plebis": {
+    "1": {
+      "Name": "Tribunus Plebis",
+      "Astutia": 1,
+      "Dignitas": 5
+    }
+  },
+  "Ex Consul": {
+    "1": {
+      "Name": "Ex Consul",
+      "Dignitas": 1
+    },
+    "2": {
+      "Name": "COS II",
+      "Dignitas": 2
+    },
+    "3": {
+      "Name": "COS III",
+      "Dignitas": 3
+    },
+    "4": {
+      "Name": "COS IV",
+      "Dignitas": 4
+    },
+    "5": {
+      "Name": "COS V",
+      "Dignitas": 5
+    },
+    "6": {
+      "Name": "COS VI",
+      "Dignitas": 6
+    },
+    "7": {
+      "Name": "COS VII",
+      "Dignitas": 7
+    },
+    "8": {
+      "Name": "COS VIII",
+      "Dignitas": 8
+    },
+    "9": {
+      "Name": "COS IX",
+      "Dignitas": 9
+    },
+    "10": {
+      "Name": "COS X",
+      "Dignitas": 10
+    }
+  },
+  "Ex Praetor": {
+    "1": {
+      "Name": "Ex Praetor",
+      "Dignitas": 1
+    }
+  },
+  "Ex Aedile": {
+    "1": {
+      "Name": "Ex Aedile",
+      "Dignitas": 1
+    }
+  },
+  "Ex Quaestor": {
+    "1": {
+      "Name": "Ex Quaestor",
+      "Dignitas": 1
+    }
+  },
+  "Ex Tribunus Plebis": {
+    "1": {
+      "Name": "Ex Tribunus Plebis",
+      "Dignitas": 1
+    }
+  }
+}

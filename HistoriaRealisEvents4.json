@@ -1,1 +1,4419 @@
-{"REF":{"-------------------- OTHER --------------------":"Ex Tribunus Plebis","Creating":"Joining",">":"<=","%":"-","Anyone":"Against (unfinished)","--- OPTIONAL ---":"Very Hard"},"Sample":{},"HEAD":{"Image":2,"IsOn":"RandomEnemy","Targets":"Always","TargetSide":"Creator","AITargetChoice":"Change","Description":{"Regular":"Joining","Failure":"TraitLadder","Success":"false"},"MainStat":100,"Custom":[{"Stat":"Side","Bonus":"Sign"},{"Stat":"For","Bonus":"+"},{"Stat":"Against","Bonus":"%"}],"Time":"Ex Tribunus Plebis"},"Buy Gladiator":{"IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Administratio","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Gold","Value":-100},{"When":"Success","Who":"Creator","Type":"Change","What":"Has Gladiator","Value":1}],"Requirements":[{"When":"Creating","What":"Has Gladiator","Comparison":"=","Value":0},{"When":"Creating","What":"Gold","Comparison":">=","Value":100}]},"Train Gladiator":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"Importance":"Low","Difficulty":"Medium","MainStat":"Martialis","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Trainer","Value":1,"Chance":25},{"When":"Success","Who":"Creator","Type":"Change","What":"Has Gladiator","Value":1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Has Gladiator","Value":-1,"Chance":30,"Description":"Training backfires"}],"Requirements":[{"When":"Creating","What":"Has Gladiator","Comparison":">","Value":0},{"When":"Creating","What":"Fighter","Comparison":">","Value":0}]},"Saturnalia":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"Description":{"Regular":"Io Saturnalia!"},"MainStat":"Pietas","Effects":[{"When":"Always","Who":"Worst Contributor","Type":"Change","What":"Happy","Value":1,"Description":"King of the Saturnalia"},{"When":"Success","Who":"Top Contributor","Type":"Change","What":"Religious","Value":1,"Chance":25},{"When":"Success","Who":"Random Character","Type":"Change","What":"Gold","Value":100,"Chance":20,"Description":"Gambling"},{"When":"Failure","Who":"Random Character","Type":"Change","What":"Gold","Value":-100,"Chance":20,"Description":"Gambling"},{"When":"Always","Who":"Random Character","Type":"Change","What":"Gold","Value":-10,"Chance":50,"Description":"Gift-giving"},{"When":"Always","Who":"Random Character","Type":"Change","What":"Sober","Value":-1,"Chance":10},{"When":"Always","Who":"Random Character","Type":"Change","What":"Gambling","Value":1,"Chance":10},{"When":"Failure","Who":"Top Contributor","Type":"Change","What":"Fortuna","Value":-1,"Chance":10,"Description":"Gods angered"}],"Requirements":[{"When":"Creating","What":"Religious","Comparison":">","Value":0}]},"Curse":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"Targets":1,"TargetSide":"Against","AITargetChoice":"WorstEnemy","MainStat":"Pietas","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Fortuna","Value":-1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Fortuna","Value":-1,"Description":"Curse backfires"},{"When":"Always","Who":"Creator","Type":"Change","What":"Kind","Value":-1,"Chance":50}],"Requirements":[{"When":"Creating","What":"Religious","Comparison":">","Value":0},{"When":"Targeting","Who":"Creator","What":"Relationships.$Target.Relationship","Comparison":"<","Value":0}],"Modifiers":[{"What":"Religious","Who":"Target","Comparison":"<","Value":0,"Stack":true,"Bonus":5,"Sign":"+","WhoGets":"Target","Attribute":"Oratoria","Description":"Skepticism"}]},"Lustratio":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Pietas","Effects":[{"When":"Success","Who":"Creator","Type":"Set","What":"Fortuna","Value":0},{"When":"Failure","Who":"Creator","Type":"Change","What":"Fortuna","Value":-1,"Chance":30,"Description":"Gods angered"}],"Requirements":[{"When":"Creating","What":"Fortuna","Comparison":"<","Value":0},{"When":"Creating","What":"Religious","Comparison":">","Value":0}]},"Watch Auspices":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"Description":{"Regular":"Birds fly upon the sky of the Forum. Atop the steps of a temple, a dark-hooded priest looks up, watching. His eyes read the words of Jupiter in the flight of the birds, his ears listen to the voice of Venus in their singing.\n\n[i]What are the gods saying?[/i]","Success":"After several minutes watching the birds, the augur turns to the crowd and makes an announcement: the auspices are good! <Creator.Name> feels inspired.\n\nThe gods smile upon the Romans – at least today.","Failure":"The augur goes back into the temple. Were the omens favorable? <Creator.Name> was distracted by something (or someone) and didn't catch it. Perhaps this is a personal omen?"},"MainStat":"Pietas","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Religious","Value":1,"Chance":50},{"When":"Failure","Who":"Creator","Type":"Change","What":"Religious","Value":-1,"Chance":50,"Description":"Screw this"},{"When":"Success","Who":"Creator","Type":"Change","What":"Fortuna","Value":1,"Chance":20,"Description":"Good omens"},{"When":"Failure","Who":"Creator","Type":"Change","What":"Fortuna","Value":-1,"Chance":10,"Description":"Bad omens"}],"Requirements":[{"When":"Creating","What":"Religious","Comparison":">=","Value":0},{"When":"Creating","What":"Religious","Comparison":"<","Value":3}]},"Insult":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"Targets":1,"AITargetChoice":"RandomEnemy","MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":-1,"Chance":50}],"Requirements":[{"When":"Creating","What":"Kind","Comparison":"<","Value":0},{"When":"Targeting","Who":"Creator","What":"Relationships.$Target.Relationship","Comparison":"<","Value":0}],"Modifiers":[{"What":"Stoic","Who":"Target","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"+","WhoGets":"Target"}]},"Write Religious Poem":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Fortuna","Value":1,"Chance":50}],"Requirements":[{"When":"Creating","What":"Religious","Comparison":">","Value":0},{"When":"Creating","What":"Poet","Comparison":">","Value":0}]},"Question Religion":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"Targets":1,"Description":{"Regular":"<Target.Name>: If the gods don't exist, then how come there are all these votive images of people who have survived sea storms by praying to the gods?\n\n<Creator.Name>: Well, where are all the images of those who suffered shipwreck and died?","Success":"<Creator.Name>'s argument, reminiscent of the Greek philosopher Diagoras of Melos, undermined <Target.Name>'s beliefs."},"MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Religious","Value":-1,"Chance":50},{"When":"Success","Who":"Target","Type":"Change","What":"Religious","Value":-1,"Chance":50}],"Requirements":[{"When":"Creating","What":"Religious","Comparison":"<","Value":0},{"When":"Targeting","What":"Religious","Comparison":">","Value":0}],"Modifiers":[{"What":"Pietas","Comparison":">","Value":0,"Bonus":-50,"Sign":"%","Attribute":"Pietas","Side":"For"},{"What":"Pietas","Comparison":">","Value":0,"Bonus":50,"Sign":"%","Attribute":"Pietas","Side":"Against"}]},"Read Epicurus":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Epicurean","Value":1,"Chance":50},{"When":"Success","Who":"Creator","Type":"Change","What":"Religious","Value":-1,"Chance":50},{"When":"Failure","Who":"Creator","Type":"Change","What":"Religious","Value":1,"Chance":50}],"Requirements":[{"When":"Creating","What":"Religious","Comparison":"<","Value":0}]},"Accuse of Hedonism":{"IsOn":true,"Circles":[{"Circle":"Peers"}],"Targets":1,"MainStat":"Astutia","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":-1},{"When":"Success","Who":"Target","Type":"Change","What":"Reputation","Value":-1,"Chance":30}],"Requirements":[{"When":"Targeting","What":"Epicurean","Comparison":">","Value":0},{"When":"Creating","What":"Religious","Comparison":">","Value":0}]},"Renounce Epicurus":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Pietas","Effects":[{"When":"Success","Who":"Creator","Type":"Set","What":"Epicurean","Value":0,"Chance":100},{"When":"Success","Who":"Creator","Type":"Change","What":"Reputation","Value":1}],"Requirements":[{"When":"Creating","What":"Epicurean","Comparison":">","Value":0},{"When":"Creating","What":"Reputation","Comparison":"<","Value":0}]},"Share Skepticism":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"Targets":1,"TargetSide":"For","AITargetChoice":"Random","MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Religious","Value":-1,"Chance":20},{"When":"Success","Who":"Target","Type":"Change","What":"Religious","Value":-1,"Chance":20}],"Requirements":[{"When":"Creating","What":"Religious","Comparison":"<","Value":0},{"When":"Targeting","What":"Religious","Comparison":"<","Value":0}]},"Gladiator Duel":{"IsOn":true,"Circles":[{"Circle":"Peers"}],"Targets":1,"AITargetChoice":"Random","MainStat":"Astutia","Effects":[{"When":"Failure","Who":"Target","Type":"Change","What":"Has Gladiator","Value":1,"Chance":50},{"When":"Success","Who":"Creator","Type":"Change","What":"Has Gladiator","Value":1,"Chance":50},{"When":"Failure","Who":"Creator","Type":"Change","What":"Has Gladiator","Value":-1,"Chance":30},{"When":"Failure","Who":"Creator","Type":"Set","What":"Has Gladiator","Value":0,"Chance":5,"Description":"Dies in combat"}],"Requirements":[{"When":"Creating","What":"Has Gladiator","Comparison":">","Value":0},{"When":"Targeting","Who":"Target","What":"Has Gladiator","Comparison":">","Value":0}]},"Throw Gladiatorial Fight":{"IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Administratio","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Dignitas","Value":1},{"When":"Success","Who":"Creator","Type":"Change","What":"Has Gladiator","Value":1,"Chance":50},{"When":"Failure","Who":"Creator","Type":"Change","What":"Has Gladiator","Value":-1,"Chance":30},{"When":"Always","Who":"Creator","Type":"Set","What":"Has Gladiator","Value":0,"Chance":5,"Description":"Death in combat"},{"When":"Success","Who":"Creator","Type":"Change","What":"Organized","Value":1,"Chance":50},{"When":"Failure","Who":"Creator","Type":"Change","What":"Organized","Value":-1,"Chance":20}],"Requirements":[{"When":"Creating","What":"Has Gladiator","Comparison":">","Value":0},{"When":"Creating","What":"Gold","Comparison":">=","Value":50,"IsCost":true}]},"Retire Gladiator":{"IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Administratio","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Dignitas","Value":3},{"When":"Success","Who":"Creator","Type":"Change","What":"Lawfulness","Value":1},{"When":"Success","Who":"Creator","Type":"Set","What":"Has Gladiator","Value":0,"Description":"Retired"}],"Requirements":[{"When":"Creating","What":"Has Gladiator","Comparison":">=","Value":5}]},"Form Gladiatorial Bodyguard":{"IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Administratio","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Dignitas","Value":-2},{"When":"Success","Who":"Creator","Type":"Change","What":"Gladiatorial Bodyguard","Value":1},{"When":"Success","Who":"Creator","Type":"Set","What":"Has Gladiator","Value":0,"Description":"Becomes bodyguard"}],"Requirements":[{"When":"Creating","What":"Has Gladiator","Comparison":">=","Value":4}]},"Begin Training":{"IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Martialis","Effects":[{"When":"Success","Who":"Creator","Type":"Set","What":"Training","Value":1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Warlike","Value":-1,"Chance":25},{"When":"Success","Who":"Creator","Type":"Change","What":"Gold","Value":-100}],"Requirements":[{"When":"Creating","What":"Warlike","Comparison":">=","Value":0},{"When":"Creating","What":"Training","Comparison":"=","Value":0},{"When":"Creating","What":"Gold","Comparison":">=","Value":100}]},"Train Riding":{"IsOn":true,"Circles":[{"Circle":"Peers"}],"Difficulty":"Very Easy","MainStat":"Martialis","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Rider","Value":1},{"When":"Always","Who":"Creator","Type":"Change","What":"Training","Value":1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Rider","Value":-1}],"Requirements":[{"When":"Creating","What":"Training","Comparison":">","Value":0,"Description":"Has begun training"},{"When":"Creating","What":"Training","Comparison":"<","Value":3,"Description":"Not done training"}]},"Go Hunting":{"IsOn":true,"Circles":[{"Circle":"Peers"}],"Difficulty":"Easy","MainStat":"Martialis","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Rider","Value":1,"Chance":10},{"When":"Success","Who":"Creator","Type":"Change","What":"Hunter","Value":1,"Chance":40},{"When":"Failure","Who":"Creator","Type":"Change","What":"Injured","Value":-1,"Chance":50}],"Requirements":[{"When":"Creating","What":"Rider","Comparison":">","Value":0}]},"Train Combat":{"IsOn":true,"Circles":[{"Circle":"Peers"}],"Difficulty":"Very Easy","MainStat":"Martialis","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Fighter","Value":1},{"When":"Always","Who":"Creator","Type":"Change","What":"Training","Value":1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Fighter","Value":-1}],"Requirements":[{"When":"Creating","What":"Training","Comparison":">","Value":0,"Description":"Has begun training"},{"When":"Creating","What":"Training","Comparison":"<","Value":3,"Description":"Not done training"}]},"Learn Tactics":{"IsOn":true,"Circles":[{"Circle":"Peers"}],"Difficulty":"Easy","MainStat":"Martialis","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Commander","Value":1},{"When":"Always","Who":"Creator","Type":"Change","What":"Training","Value":1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Commander","Value":-1}],"Requirements":[{"When":"Creating","What":"Training","Comparison":">","Value":0,"Description":"Has begun training"},{"When":"Creating","What":"Training","Comparison":"<","Value":3,"Description":"Not done training"}]},"Sabotage Training":{"IsOn":true,"Circles":[{"Circle":"Peers"}],"Targets":1,"AITargetChoice":"WorstEnemy","MainStat":"Astutia","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Training","Value":1,"Description":"Force target to skip a training session"},{"When":"Success","Who":"Target","Type":"Change","What":"Rider","Value":-1,"Chance":10},{"When":"Success","Who":"Target","Type":"Change","What":"Commander","Value":-1,"Chance":10},{"When":"Success","Who":"Target","Type":"Change","What":"Fighter","Value":-1,"Chance":10}],"Requirements":[{"When":"Creating","Who":"Target","What":"Training","Comparison":">","Value":0,"Description":"Target is training"},{"When":"Creating","Who":"Creator","What":"Scheming","Comparison":">","Value":0}]},"Wrestle":{"IsOn":true,"Circles":[{"Circle":"Peers"}],"Targets":1,"MainStat":"Martialis","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Fighter","Value":1},{"When":"Failure","Who":"Target","Type":"Change","What":"Fighter","Value":1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Fighter","Value":-1}],"Requirements":[{"When":"Creating","What":"Fighter","Comparison":">","Value":0}]},"Antagonize":{"Image":"Speech","Circles":[{"Circle":"Peers"}],"Targets":1,"AITargetChoice":"RandomEnemy","MainStat":"Astutia","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":-5}]},"Steal":{"Image":"Speech","Circles":[{"Circle":"Peers"}],"Targets":1,"AITargetChoice":"RandomEnemy","MainStat":"Astutia","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Dignitas","Value":2},{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":-2}]},"Cooperate":{"Image":"Speech","Circles":[{"Circle":"Peers"}],"Targets":1,"TargetSide":"For","AITargetChoice":"RandomFriend","MainStat":"Pietas","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":3},{"When":"Success","Who":"Creator","Type":"Change","What":"Dignitas","Value":3}]},"Grant Favor":{"Image":"Speech","Circles":[{"Circle":"Peers"}],"Targets":1,"TargetSide":"For","AITargetChoice":"RandomFriend","MainStat":"Administratio","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":3},{"When":"Success","Who":"Creator","Type":"Change","What":"Dignitas","Value":3}]},"Overtake Patron":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"Importance":"Very High","Difficulty":"Medium","Targets":1,"TargetSide":"Against","AITargetChoice":"WorstEnemy","Description":{"Failure":"<TopContributor.Name> was instrumental in maintaining the status quo."},"MainStat":"Martialis","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":-1,"Special":"OvertakePatron"},{"When":"Success","Who":"Creator","Type":"Change","What":"Dignitas","Value":-10,"Description":"Oathbreaking"},{"When":"Failure","Who":"Target","Type":"Change","What":"Dignitas","Value":1,"Description":"Rebellion supressed"},{"When":"Failure","Who":"Creator","Type":"Change","What":"Dignitas","Value":-5},{"When":"Success","Who":"Creator","Type":"Change","What":"Social Mobility","Value":1},{"When":"Success","Who":"Target","Type":"Change","What":"Social Mobility","Value":-1}],"Requirements":[{"When":"Targeting","Who":"Creator","What":"Patron","Comparison":"=","Value":"$Target.Num"},{"When":"Creating","What":"Patron","Comparison":"!=","Value":0},{"When":"Targeting","Who":"Creator","What":"Auctoritas","Comparison":">","Value":"$Target.Auctoritas"},{"When":"Targeting","Who":"Creator","What":"Relationships.$Target.Relationship","Comparison":"<","Value":0}],"Modifiers":[{"What":"Auctoritas","Who":"Anyone","Comparison":">","Value":0,"Stack":true,"Bonus":1,"Sign":"+","WhoGets":"Anyone"},{"What":"Leader","Who":"Target","Comparison":"<","Value":0,"Stack":true,"Bonus":-10,"Sign":"+","WhoGets":"Target","Description":"Lack of leadership"}]},"Self-promote":{"Image":"Speech","Circles":[{"Circle":"Peers"}],"MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Dignitas","Value":1}]},"Deepen Friendship":{"Image":"Speech","IsOn":true,"Targets":1,"TargetSide":"For","AITargetChoice":"RandomFriend","MainStat":"Pietas","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Relationships.$Target.Relationship","Value":5},{"When":"Success","Who":"Target","Type":"Change","What":"Relationships.$Creator.Relationship","Value":5}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Social","Comparison":">","Value":1},{"When":"Targeting","Who":"Target","What":"Relationships.$Creator.Relationship","Comparison":">=","Value":20}]},"Offer Bad Deal":{"Image":"Speech","IsOn":true,"Targets":1,"TargetSide":"Against","AITargetChoice":"RandomEnemy","MainStat":"Administratio","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Gold","Value":30},{"When":"Success","Who":"Target","Type":"Change","What":"Gold","Value":-30},{"When":"Failure","Who":"Creator","Type":"Change","What":"Gold","Value":-30},{"When":"Failure","Who":"Target","Type":"Change","What":"Gold","Value":30}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Scheming","Comparison":">=","Value":1},{"When":"Targeting","Who":"Target","What":"Gold","Comparison":">=","Value":30},{"When":"Creating","Who":"Creator","What":"Business","Comparison":">=","Value":1},{"When":"Targeting","Who":"Target","What":"Scheming","Comparison":"<","Value":0}]},"Make Amends":{"Image":"Speech","IsOn":true,"Targets":1,"TargetSide":"Against","AITargetChoice":"RandomEnemy","MainStat":"Pietas","Effects":[{"When":"Success","Who":"Creator","Type":"Set","What":"Relationships.$Target.Relationship","Value":0},{"When":"Success","Who":"Target","Type":"Set","What":"Relationships.$Creator.Relationship","Value":0}],"Requirements":[{"When":"Targeting","Who":"Creator","What":"Relationships.$Target.Relationship","Comparison":"<","Value":-40},{"When":"Creating","Who":"Creator","What":"Social","Comparison":">","Value":0}]},"Help Quit Drinking":{"Image":"Speech","IsOn":true,"Targets":1,"TargetSide":"Against","AITargetChoice":"RandomFriend","MainStat":"Pietas","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Relationships.$Target.Relationship","Value":5},{"When":"Success","Who":"Target","Type":"Set","What":"Sober","Value":4}],"Requirements":[{"When":"Targeting","Who":"Creator","What":"Relationships.$Target.Relationship","Comparison":">","Value":20,"Description":"Cares about person"},{"When":"Creating","Who":"Creator","What":"Social","Comparison":">","Value":0,"Description":"Is Social"},{"When":"Targeting","Who":"Target","What":"Sober","Comparison":"<=","Value":-2,"Description":"Person drinks heavily"}],"Modifiers":[{"What":"Sober","Who":"For","Comparison":">","Value":0,"Stack":true,"Bonus":3,"Sign":"+"},{"What":"Sober","Comparison":"=","Value":4,"Bonus":5,"Sign":"+","Description":"Been through this"},{"What":"Sober","Who":"Creator","Comparison":"<","Value":0,"Stack":true,"Bonus":3,"Sign":"-"}]},"Promote Person":{"Image":"Speech","IsOn":true,"Targets":1,"TargetSide":"For","AITargetChoice":"RandomFriend","MainStat":"Administratio","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":3}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Social","Comparison":">=","Value":3}]},"Offer a Drink":{"Image":"Speech","IsOn":true,"Targets":1,"TargetSide":"Against","AITargetChoice":"Random","MainStat":"Astutia","Effects":[{"When":"Success","Who":"Target","Type":"Set","What":"Sober","Value":-3}],"Requirements":[{"When":"Targeting","Who":"Creator","What":"Relationships.$Target.Relationship","Comparison":"<","Value":-20,"Description":"Dislikes person"},{"When":"Creating","Who":"Creator","What":"Scheming","Comparison":">=","Value":1,"Description":"Is Scheming"},{"When":"Targeting","Who":"Target","What":"Sober","Comparison":"=","Value":4,"Description":"Person is sober"}]},"Slander":{"Image":"Speech","IsOn":true,"Targets":1,"TargetSide":"Against","AITargetChoice":"WorstEnemy","MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":-3},{"When":"Failure","Who":"Creator","Type":"Change","What":"Honestas","Value":-1},{"When":"Success","Who":"Target","Type":"Change","What":"Reputation","Value":-1}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Scheming","Comparison":">=","Value":2}]},"Gossip":{"Image":"Speech","IsOn":true,"Targets":1,"TargetSide":"Against","AITargetChoice":"WorstEnemy","MainStat":"Astutia","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":-1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Honestas","Value":-1,"Chance":50},{"When":"Success","Who":"Creator","Type":"Change","What":"Scheming","Value":1,"Chance":30}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Scheming","Comparison":">=","Value":1}]},"Play Latrones":{"Image":"Speech","IsOn":true,"MainStat":"Astutia","Effects":[{"When":"Always","Who":"Creator","Type":"Change","What":"Gambler","Value":1,"Chance":25},{"When":"Success","Who":"Creator","Type":"Change","What":"Scheming","Value":1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Scheming","Value":-1,"Chance":80}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Sober","Comparison":"<=","Value":-1}]},"Gamble":{"Image":"Speech","IsOn":true,"MainStat":"Astutia","Effects":[{"When":"Always","Who":"Creator","Type":"Change","What":"Honorable","Value":-1,"Chance":30},{"When":"Success","Who":"Creator","Type":"Change","What":"Gold","Value":100}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Gambler","Comparison":">=","Value":1},{"When":"Creating","Who":"Creator","What":"Gold","Comparison":">=","Value":50,"IsCost":true}]},"Hire Assassin":{"Image":"Speech","IsOn":true,"MainStat":"Astutia","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Has Assassin","Value":1},{"When":"Success","Who":"Creator","Type":"Change","What":"Gold","Value":-100}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Honorable","Comparison":"<","Value":0},{"When":"Creating","Who":"Creator","What":"Gold","Comparison":">=","Value":100}]},"Assassinate":{"IsOn":true,"Targets":1,"MainStat":"Astutia","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Murderer","Value":1,"Chance":50},{"When":"Success","Who":"Target","Type":"Set","What":"Health","Value":-100,"Special":"Kill"},{"When":"Always","Who":"Creator","Type":"Set","What":"Has Assassin","Value":0}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Has Assassin","Comparison":">","Value":0}]},"Visit Tavern":{"Image":"Speech","IsOn":true,"Description":{"Regular":"<Creator.Name> is going to the [i]popina[/i] to have a couple of drinks and some fun. All a Roman needs is a strong wine, a shady friend and a loaded die.","Success":"<Creator.Name>'s night at the [i]popina[/i] was a success!","Failure":"It turns out that the [i]popina[/i] isn't the place for <Creator.Name> afterall."},"MainStat":"Astutia","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Happy","Value":1,"Description":"Had a good time"},{"When":"Success","Who":"Creator","Type":"Change","What":"Sober","Value":-1,"Description":"Drank lots of wine"},{"When":"Failure","Who":"Creator","Type":"Change","What":"Sober","Value":1,"Chance":50,"Description":"Why drink anyway?"}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Sober","Comparison":"<","Value":2,"Description":"Not sober enough"},{"When":"Joining","What":"Sober","Comparison":"<","Value":3,"Description":"Not sober enough"},{"When":"Creating","What":"Sober","Comparison":">","Value":-3,"Description":"Not too drunk to leave home"}],"Modifiers":[{"What":"Social","Comparison":">","Value":0,"Bonus":5,"Sign":"+","Attribute":"Oratoria","Description":"Good conversation"}]},"Prosecute":{"Image":"Speech","IsOn":true,"Targets":1,"TargetSide":"Against","AITargetChoice":"RandomEnemy","MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Gold","Value":-100},{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":-10},{"When":"Failure","Who":"Creator","Type":"Change","What":"Dignitas","Value":-20},{"When":"Failure","Who":"Creator","Type":"Change","What":"Law","Value":-1,"Chance":50}],"Requirements":[{"When":"Targeting","Who":"Target","What":"Honest","Comparison":"<","Value":0},{"When":"Creating","Who":"Creator","What":"Law","Comparison":">","Value":0},{"When":"Creating","Who":"Creator","What":"Gold","Comparison":">","Value":20,"IsCost":true}],"Modifiers":[{"What":"Honest","Who":"Target","Comparison":"TraitLadder","Stack":true,"Bonus":10,"Sign":"+"}]},"Prosecute Unjustly":{"Image":"Speech","IsOn":true,"Targets":1,"TargetSide":"Against","AITargetChoice":"RandomEnemy","MainStat":"Astutia","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Gold","Value":-100},{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":-10},{"When":"Failure","Who":"Creator","Type":"Change","What":"Dignitas","Value":-20}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Honest","Comparison":"<","Value":0}],"Modifiers":[{"What":"Honest","Who":"Target","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"+"}]},"Bribe":{"Image":"Speech","IsOn":true,"Targets":1,"TargetSide":"Against","AITargetChoice":"WorstEnemy","MainStat":"Administratio","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Relationships.$Creator.Relationship","Value":10},{"When":"Success","Who":"Target","Type":"Change","What":"Gold","Value":50},{"When":"Failure","Who":"Creator","Type":"Change","What":"Gold","Value":50,"Description":"Offer refused."},{"When":"Failure","Who":"Creator","Type":"Change","What":"Dignitas","Value":-5},{"When":"Always","Who":"Creator","Type":"Change","What":"Honest","Value":-1,"Chance":20},{"When":"Success","Who":"Target","Type":"Change","What":"Honest","Value":-1,"Chance":20}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Honest","Comparison":"<","Value":0,"Description":"$Creator.Mood"},{"When":"Creating","Who":"Creator","What":"Gold","Comparison":">","Value":50,"IsCost":true}],"Modifiers":[{"What":"Honest","Who":"Target","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"+"}]},"Study Law":{"IsOn":true,"MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Law","Value":1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Law","Value":-1,"Chance":50},{"When":"Success","Who":"Creator","Type":"Change","What":"Lawful","Value":1,"Chance":10},{"When":"Failure","Who":"Creator","Type":"Change","What":"Lawful","Value":-1,"Chance":10}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Law","Comparison":"<","Value":2},{"When":"Creating","Who":"Creator","What":"Orator","Comparison":">","Value":0}]},"Socialize at the Baths":{"IsOn":true,"MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Health","Value":1},{"When":"Success","Who":"Creator","Type":"Change","What":"Bather","Value":1,"Chance":20},{"When":"Failure","Who":"Creator","Type":"Change","What":"Bather","Value":-1,"Chance":30},{"When":"Failure","Who":"Creator","Type":"Change","What":"Health","Value":-1,"Chance":20,"Description":"Infection."},{"When":"Success","Who":"Creator","Type":"Change","What":"Social","Value":1,"Chance":70},{"When":"Failure","Who":"Creator","Type":"Change","What":"Social","Value":-1,"Chance":50}],"Requirements":[{"When":"Creating","What":"Gold","Comparison":">","Value":10,"IsCost":true},{"When":"Joining","What":"Gold","Comparison":">","Value":10,"IsCost":true},{"When":"Creating","What":"Social","Comparison":"<","Value":3}],"Modifiers":[{"What":"Slaves","Comparison":">","Value":0,"Stack":true,"Bonus":2,"Sign":"+","Description":"Boy, hold my strigil (Slaves trait)"},{"What":"Bather","Comparison":">","Value":0,"Stack":true,"Bonus":5,"Sign":"+","Description":"At home in the baths (Bather trait)"}]},"Exercise at Baths":{"IsOn":true,"MainStat":"Martialis","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Health","Value":1},{"When":"Success","Who":"Creator","Type":"Change","What":"Fit","Value":1,"Chance":50}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Gold","Comparison":">","Value":10,"IsCost":true},{"When":"Joining","What":"Gold","Comparison":">","Value":10,"IsCost":true},{"When":"Creating","Who":"Creator","What":"Bather","Comparison":">","Value":1}],"Modifiers":[{"What":"Slaves","Comparison":">","Value":0,"Stack":true,"Bonus":2,"Sign":"+","Description":"Boy, hold my strigil (Slaves trait)"},{"What":"Bather","Comparison":">","Value":0,"Stack":true,"Bonus":5,"Sign":"+","Description":"At home in the baths (Bather trait)"}]},"Read at Baths":{"IsOn":true,"MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Happy","Value":1},{"When":"Success","Who":"Creator","Type":"Change","What":"Poet","Value":1,"Chance":30}],"Requirements":[{"When":"Creating","Who":"Creator","What":"Gold","Comparison":">","Value":10,"IsCost":true},{"When":"Joining","What":"Gold","Comparison":">","Value":10,"IsCost":true},{"When":"Creating","Who":"Creator","What":"Bather","Comparison":">","Value":0}],"Modifiers":[{"What":"Slaves","Comparison":">","Value":0,"Stack":true,"Bonus":2,"Sign":"+","Description":"Boy, hold my strigil (Slaves trait)"},{"What":"Bather","Comparison":">","Value":0,"Stack":true,"Bonus":5,"Sign":"+","Description":"At home in the baths (Bather trait)"}]},"Ruin Crops":{"IsOn":true,"Difficulty":"Easy","Targets":1,"TargetSide":"Against","AITargetChoice":"WorstEnemy","MainStat":"Astutia","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Crops","Value":-1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Dignitas","Value":-1},{"When":"Always","Who":"Creator","Type":"Change","What":"Corruption","Value":1}],"Requirements":[{"When":"Targeting","Who":"Target","What":"Crops","Comparison":">","Value":0},{"When":"Targeting","Who":"Creator","What":"Relationships.$Target.Relationship","Comparison":"<","Value":0},{"When":"Creating","Who":"Creator","What":"Gold","Comparison":">","Value":20,"IsCost":true},{"When":"Creating","Who":"Creator","What":"Scheming","Comparison":">","Value":0}]},"Take Loan":{"MainStat":"Administratio","Requirements":[{"When":"Creating","What":"Gold","Comparison":"<","Value":15}],"Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Gold","Value":15}]},"Manage Finances":{"IsOn":true,"MainStat":"Administratio","Effects":[{"When":"Failure","Who":"Creator","Type":"Change","What":"Business","Value":-1,"Chance":50},{"When":"Success","Who":"Creator","Type":"Change","What":"Gold","Value":100},{"When":"Success","Who":"Creator","Type":"Change","What":"Business","Value":1,"Chance":50},{"When":"Failure","Who":"Creator","Type":"Change","What":"Gold","Value":10}],"Requirements":[{"When":"Creating","What":"Business","Comparison":"<","Value":3}]},"Buy Land":{"IsOn":true,"MainStat":"Administratio","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Land Size","Value":1},{"When":"Success","Who":"Creator","Type":"Change","What":"Gold","Value":-70}],"Requirements":[{"When":"Creating","What":"Gold","Comparison":">=","Value":70},{"When":"Creating","What":"Land Size","Comparison":"<","Value":3}]},"Cultivate Crops":{"IsOn":true,"Difficulty":"Very Easy","MainStat":"Administratio","Requirements":[{"When":"Creating","What":"Crops","Comparison":"<","Value":1},{"When":"Creating","What":"Land Size","Comparison":">","Value":0}],"Modifiers":[{"What":"Agriculture Gods","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"+"},{"What":"Oratory Tutor","Comparison":"=","Value":-1,"Bonus":10,"Sign":"+","Side":"For"}],"Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Crops","Value":1}]},"Harvest Crops":{"IsOn":true,"Difficulty":"Easy","MainStat":"Administratio","Requirements":[{"When":"Creating","What":"Crops","Comparison":"=","Value":1}],"Modifiers":[{"What":"Agriculture Gods","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"+"}],"Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Gold","Value":200,"Description":"Successful Harvest"},{"When":"Success","Who":"Creator","Type":"Change","What":"Gold","Value":100,"Chance":50,"Description":"Plentiful Harvest"},{"When":"Failure","Who":"Creator","Type":"Change","What":"Crops","Value":-1,"Description":"Failed Harvest"},{"When":"Success","Who":"Creator","Type":"Set","What":"Crops","Value":0},{"When":"Always","Who":"Creator","Type":"Set","What":"Agriculture Gods","Value":0}]},"Cereal Rites":{"IsOn":true,"Difficulty":"Easy","MainStat":"Pietas","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Agriculture Gods","Value":1},{"When":"Success","Who":"Creator","Type":"Change","What":"Crops","Value":1,"Chance":20}],"Requirements":[{"When":"Creating","What":"Land Size","Comparison":">","Value":0},{"When":"Creating","What":"Gold","Comparison":">","Value":10,"IsCost":true},{"When":"Creating","What":"Agriculture Gods","Comparison":"<","Value":3}]},"Find Tutor":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Oratory Tutor","Value":1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Oratory Tutor","Value":-1}],"Requirements":[{"When":"Creating","What":"Oratory Tutor","Comparison":">","Value":-2},{"When":"Creating","What":"Oratory Tutor","Comparison":"<","Value":3},{"When":"Creating","What":"Age","Comparison":">","Value":14},{"When":"Creating","What":"Orator","Comparison":"=","Value":0},{"When":"Creating","What":"Gold","Comparison":">","Value":50,"IsCost":true},{"When":"Creating","What":"Social","Comparison":">","Value":0}],"Modifiers":[{"What":"Oratory Tutor","Who":"Creator","Comparison":">","Value":0,"Stack":true,"Bonus":-20,"Sign":"%","WhoGets":"Creator","Description":"Current tutor doesn't want to go."},{"What":"Gender","Who":"Creator","Comparison":"=","Value":"Female","Bonus":-50,"Sign":"%"}]},"Replace Tutor":{"Image":"Speech","Circles":[{"Circle":"Peers"}],"MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Oratory Tutor","Value":1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Oratory Tutor","Value":-1}],"Requirements":[{"When":"Creating","What":"Oratory Tutor","Comparison":">","Value":-2},{"When":"Creating","What":"Oratory Tutor","Comparison":"<","Value":3},{"When":"Creating","What":"Age","Comparison":">","Value":14},{"When":"Creating","What":"Orator","Comparison":"=","Value":0},{"When":"Creating","What":"Gold","Comparison":">","Value":50,"IsCost":true},{"When":"Creating","What":"Oratory Tutor","Comparison":"!=","Value":0}],"Modifiers":[{"What":"Oratory Tutor","Who":"Creator","Comparison":">","Value":0,"Stack":true,"Bonus":-20,"Sign":"%","WhoGets":"Creator","Description":"Current tutor doesn't want to go."},{"What":"Gender","Who":"Creator","Comparison":"=","Value":"Female","Bonus":-50,"Sign":"%"}]},"Study Rhetoric":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Memory","Value":1,"Outcome":1,"OutcomeChance":100},{"When":"Failure","Who":"Creator","Type":"Change","What":"Memory","Value":-1,"Chance":50},{"When":"Success","Who":"Creator","Type":"Change","What":"Oratory Style","Value":1,"Chance":20},{"When":"Failure","Who":"Creator","Type":"Change","What":"Oratory Style","Value":-1,"Chance":20}],"Requirements":[{"When":"Creating","What":"Oratory Tutor","Comparison":"!=","Value":0}],"Modifiers":[{"What":"Oratory Tutor","Who":"Creator","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"%","WhoGets":"Creator","Description":"Tutor help"},{"What":"Gender","Who":"Creator","Comparison":"=","Value":"Female","Bonus":-50,"Sign":"%"}]},"Finish Oratory Studies":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Oratoria","Effects":[{"When":"Always","Who":"Creator","Type":"Set","What":"Oratory Tutor","Value":0},{"When":"Success","Who":"Creator","Type":"Change","What":"Orator","Value":1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Orator","Value":-1}],"Requirements":[{"When":"Creating","What":"Oratory Tutor","Comparison":"!=","Value":0},{"When":"Creating","What":"Memory","Comparison":"!=","Value":0}],"Modifiers":[{"Description":"Current tutor doesn't want to go."}]},"Supercede Patron":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"Importance":"Very High","Difficulty":"Medium","Targets":1,"TargetSide":"Against","AITargetChoice":"BestFriend","Description":{"Failure":"$TopContributor was instrumental in maintaining the status quo."},"MainStat":"Oratoria","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":-1,"Special":"OvertakePatron"},{"When":"Failure","Who":"Creator","Type":"Set","What":"Relationships.$Target.Relationship","Value":10,"Description":"Rebellion supressed"},{"When":"Failure","Who":"Target","Type":"Change","What":"Dignitas","Value":1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Dignitas","Value":-5}],"Requirements":[{"When":"Targeting","Who":"Creator","What":"Patron","Comparison":"=","Value":"$Target.Num"},{"When":"Creating","What":"Patron","Comparison":"!=","Value":0},{"When":"Targeting","Who":"Creator","What":"Auctoritas","Comparison":">","Value":"$Target.Auctoritas"},{"When":"Targeting","Who":"Creator","What":"Relationships.$Target.Relationship","Comparison":">","Value":50}],"Modifiers":[{"What":"Auctoritas","Who":"Anyone","Comparison":">","Value":0,"Stack":true,"Bonus":1,"Sign":"+","WhoGets":"Anyone"},{"What":"Leader","Who":"Target","Comparison":"<","Value":0,"Stack":true,"Bonus":-10,"Sign":"+","WhoGets":"Target","Description":"Lack of leadership"}]},"Betray Patron":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"Importance":"Very High","Difficulty":"Medium","Targets":1,"TargetSide":"Against","AITargetChoice":"WorstEnemy","Description":{"Failure":"$TopContributor was instrumental in maintaining the status quo."},"MainStat":"Astutia","Effects":[{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":-1,"Special":"OvertakePatron"},{"When":"Failure","Who":"Creator","Type":"Set","What":"Relationships.$Target.Relationship","Value":10,"Description":"Rebellion supressed"},{"When":"Failure","Who":"Target","Type":"Change","What":"Dignitas","Value":1},{"When":"Failure","Who":"Creator","Type":"Change","What":"Dignitas","Value":-5}],"Requirements":[{"When":"Targeting","Who":"Creator","What":"Patron","Comparison":"=","Value":"$Target.Num"},{"When":"Creating","What":"Patron","Comparison":"!=","Value":0},{"When":"Targeting","Who":"Creator","What":"Dignitas","Comparison":">","Value":"$Target.Dignitas"},{"When":"Targeting","Who":"Creator","What":"Relationships.$Target.Relationship","Comparison":">","Value":40},{"When":"Creating","What":"Scheming","Comparison":">=","Value":2}],"Modifiers":[{"What":"Auctoritas","Who":"Anyone","Comparison":">","Value":0,"Stack":true,"Bonus":1,"Sign":"+","WhoGets":"Anyone"},{"What":"Leader","Who":"Target","Comparison":"<","Value":0,"Stack":true,"Bonus":-10,"Sign":"+","WhoGets":"Target","Description":"Lack of leadership"}]},"Give Speech":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Oratoria","Requirements":[{"When":"Creating","What":"Orator","Comparison":">","Value":0}],"Modifiers":[{"What":"Commander","Comparison":">","Value":0,"Bonus":10,"Sign":"%","Attribute":"Martialis"}],"Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Orator","Value":1,"Chance":10},{"When":"Success","Who":"Creator","Type":"Change","What":"Dignitas","Value":1}]},"Give Drunken Speech":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Oratoria","Effects":[{"When":"Failure","Who":"Creator","Type":"Change","What":"Thriving","Value":-1},{"When":"Success","Who":"Creator","Type":"Change","What":"Orator","Value":1,"Chance":5}],"Requirements":[{"When":"Creating","What":"Orator","Comparison":">","Value":0},{"When":"Creating","What":"Sober","Comparison":"<","Value":-1}],"Modifiers":[{"What":"Commander","Comparison":">","Value":0,"Bonus":10,"Sign":"%","Attribute":"Martialis"}]},"Quit Drinking":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"MainStat":"Pietas","Effects":[{"When":"Failure","Who":"Creator","Type":"Change","What":"Thriving","Value":-1},{"When":"Success","Who":"Creator","Type":"Set","What":"Sober","Value":4}],"Requirements":[{"When":"Creating","What":"Thriving","Comparison":"<","Value":0}]},"Ad Hominem":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"Targets":1,"AITargetChoice":"RandomEnemy","MainStat":"Oratoria","Requirements":[{"When":"Creating","What":"Orator","Comparison":"<","Value":0}],"Effects":[{"When":"Success","Who":"Creator","Type":"Change","What":"Orator","Value":-1},{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":-1}]},"Debate Law":{"Image":"Speech","IsOn":true,"Circles":[{"Circle":"Peers"}],"Targets":1,"AITargetChoice":"Random","MainStat":"Oratoria","Effects":[{"When":"Always","Who":"Top Winner (unfinished)","Type":"Change","What":"Law","Value":1,"Chance":20},{"When":"Success","Who":"Creator","Type":"Change","What":"Dignitas","Value":1},{"When":"Success","Who":"Target","Type":"Change","What":"Dignitas","Value":-1}],"Requirements":[{"When":"Creating","What":"Law","Comparison":">","Value":0},{"When":"Targeting","What":"Law","Comparison":">","Value":0}]}," -- ELECTIONS --":{},"Consul Elections":{"Image":"Speech","Circles":[{"Circle":"Public"}],"Importance":"Medium","Time":10,"Type":"Public","Elections":{"Office":"Consul","Holders":2},"Description":{"Regular":"Elections for the office of Consul."},"MainStat":"Martialis","Effects":[{"When":"Always","Who":"Top","Count":2,"Type":"Change","What":"Elected","Detail":"Consul","Value":1}],"Requirements":[{"When":"Joining","What":"Auctoritas","Comparison":">","Value":50},{"When":"Joining","What":"Elected","Comparison":"=","Value":0}],"Modifiers":[{"What":"Auctoritas","Who":"Anyone","Comparison":">","Value":0,"Stack":true,"Bonus":1,"Sign":"+","WhoGets":"Anyone","Description":"Auctoritas"},{"What":"Age","Comparison":"<","Value":40,"Stack":true,"Bonus":-2,"Sign":"+","Description":"Too young"},{"What":"Ambitious","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"%","Description":"Ambition Trait"},{"What":"Orator","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"%","Attribute":"Oratoria","Description":"Oratory traits"},{"What":"Consul","Comparison":">","Value":0,"Stack":true,"Bonus":-40,"Sign":"%","Description":"Re-election"},{"What":"Mood","Comparison":"=","Value":"Confident","Bonus":10,"Sign":"%","Description":"Confident Mood"},{"What":"Age","Comparison":">","Value":50,"Stack":true,"Bonus":-2,"Sign":"+","Description":"Too old"},{"What":"Ex Praetor","Comparison":">","Value":0,"Bonus":20,"Sign":"%","Description":"Ex Praetor"},{"What":"Ex Consul","Comparison":">","Value":0,"Stack":true,"Bonus":-30,"Sign":"+","Description":"Ex Consul"}]},"Praetor Elections":{"Image":"Speech","Circles":[{"Circle":"Public"}],"Importance":"Medium","Time":10,"Type":"Public","Elections":{"Office":"Praetor","Holders":1},"Description":{"Regular":"Elections for the office of Praetor"},"MainStat":"Oratoria","Effects":[{"When":"Always","Who":"Top","Count":1,"Type":"Change","What":"Elected","Detail":"Praetor","Value":1}],"Requirements":[{"When":"Joining","What":"Auctoritas","Comparison":">","Value":40},{"When":"Joining","What":"Elected","Comparison":"=","Value":0}],"Modifiers":[{"What":"Law","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"+","Description":"Law Trait"},{"What":"Auctoritas","Who":"Anyone","Comparison":">","Value":0,"Stack":true,"Bonus":1,"Sign":"+","WhoGets":"Anyone","Description":"Auctoritas"},{"What":"Age","Comparison":"<","Value":32,"Stack":true,"Bonus":-2,"Sign":"+","Description":"Too young"},{"What":"Ambitious","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"%","Description":"Ambition Trait"},{"What":"Orator","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"%","Attribute":"Oratoria","Description":"Oratory traits"},{"What":"Consul","Comparison":">","Value":0,"Stack":true,"Bonus":-90,"Sign":"%","Description":"This office is beneath a consul"},{"What":"Mood","Comparison":"=","Value":"Confident","Bonus":10,"Sign":"%","Description":"Confident Mood"},{"What":"Age","Comparison":">","Value":40,"Stack":true,"Bonus":-2,"Sign":"+","Description":"Too old"},{"What":"Ex Aedile","Comparison":">","Value":0,"Bonus":20,"Sign":"%","Description":"Ex Aedile"},{"What":"Ex Praetor","Comparison":">","Value":0,"Bonus":-50,"Sign":"%","Description":"Former Praetor"},{"What":"Praetor","Comparison":">","Value":0,"Bonus":-90,"Sign":"%","Description":"Re-election"},{"What":"Elected","Comparison":">","Value":0,"Bonus":-999,"Sign":"%","Description":"Already elected"}]},"Aedile Elections":{"Image":"Speech","Circles":[{"Circle":"Public"}],"Importance":"Medium","Time":10,"Type":"Public","Elections":{"Office":"Aedile","Holders":4},"Description":{"Regular":"Elections for the office of Aedile."},"MainStat":"Administratio","Effects":[{"When":"Always","Who":"Top","Count":4,"Type":"Change","What":"Elected","Detail":"Aedile","Value":1}],"Requirements":[{"When":"Joining","What":"Auctoritas","Comparison":">","Value":30},{"When":"Joining","What":"Elected","Comparison":"=","Value":0}],"Modifiers":[{"What":"Auctoritas","Who":"Anyone","Comparison":">","Value":0,"Stack":true,"Bonus":1,"Sign":"+","WhoGets":"Anyone","Description":"Auctoritas"},{"What":"Age","Comparison":"<","Value":35,"Stack":true,"Bonus":-2,"Sign":"+","Description":"Too young"},{"What":"Ambitious","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"%","Description":"Ambition Trait"},{"What":"Orator","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"%","Attribute":"Oratoria","Description":"Oratory traits"},{"What":"Consul","Comparison":">","Value":0,"Stack":true,"Bonus":-90,"Sign":"%","Description":"This office is beneath a consul"},{"What":"Mood","Comparison":"=","Value":"Confident","Bonus":10,"Sign":"%","Description":"Confident Mood"},{"What":"Age","Comparison":">","Value":40,"Stack":true,"Bonus":-2,"Sign":"+","Description":"Too old"},{"What":"Elected","Comparison":">","Value":0,"Bonus":-999,"Sign":"%","Description":"Already elected"},{"What":"Ex Quaestor","Comparison":">","Value":0,"Bonus":20,"Sign":"%","Description":"Ex Quaestor"},{"What":"Ex Aedile","Comparison":">","Value":0,"Bonus":-50,"Sign":"%","Description":"Former Aedile"},{"What":"Aedile","Comparison":">","Value":0,"Bonus":-90,"Sign":"%","Description":"Re-election"}]},"Quaestor Elections":{"Image":"Speech","Circles":[{"Circle":"Public"}],"Importance":"Medium","Time":10,"Type":"Public","Elections":{"Office":"Quaestor","Holders":4},"Description":{"Regular":"Elections for the office of Quaestor."},"MainStat":"Oratoria","Effects":[{"When":"Always","Who":"Top","Count":4,"Type":"Change","What":"Elected","Detail":"Quaestor","Value":1}],"Requirements":[{"When":"Joining","What":"Auctoritas","Comparison":">","Value":20},{"When":"Joining","What":"Elected","Comparison":"=","Value":0}],"Modifiers":[{"What":"Auctoritas","Who":"Anyone","Comparison":">","Value":0,"Stack":true,"Bonus":1,"Sign":"+","WhoGets":"Anyone","Description":"Auctoritas"},{"What":"Age","Comparison":"<","Value":32,"Stack":true,"Bonus":-2,"Sign":"+","Description":"Too young"},{"What":"Ambitious","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"%","Description":"Ambition Trait"},{"What":"Orator","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"%","Attribute":"Oratoria","Description":"Oratory traits"},{"What":"Consul","Comparison":">","Value":0,"Stack":true,"Bonus":-90,"Sign":"%","Description":"This office is beneath a consul"},{"What":"Mood","Comparison":"=","Value":"Confident","Bonus":10,"Sign":"%","Description":"Confident Mood"},{"What":"Age","Comparison":">","Value":40,"Stack":true,"Bonus":-2,"Sign":"+","Description":"Too old"},{"What":"Elected","Comparison":">","Value":0,"Bonus":-999,"Sign":"%","Description":"Already elected"},{"What":"Ex Quaestor","Comparison":">","Value":0,"Bonus":-50,"Sign":"%","Description":"Former Quaestor"},{"What":"Quaestor","Comparison":">","Value":0,"Bonus":-90,"Sign":"%","Description":"Re-election"}]},"Tribunus Plebis Elections":{"Image":"Speech","Circles":[{"Circle":"Public"}],"Importance":"Medium","Time":10,"Type":"Public","Elections":{"Office":"Tribunus Plebis","Holders":10},"Description":{"Regular":"Elections for the office of Tribunus Plebis."},"MainStat":"Astutia","Effects":[{"When":"Always","Who":"Top","Count":10,"Type":"Change","What":"Elected","Detail":"Tribunus Plebis","Value":1}],"Requirements":[{"When":"Joining","What":"Auctoritas","Comparison":">","Value":20},{"When":"Joining","What":"Elected","Comparison":"=","Value":0}],"Modifiers":[{"What":"Auctoritas","Who":"Anyone","Comparison":">","Value":0,"Stack":true,"Bonus":1,"Sign":"+","WhoGets":"Anyone","Description":"Auctoritas"},{"What":"Age","Comparison":"<","Value":30,"Stack":true,"Bonus":-2,"Sign":"+","Description":"Too young"},{"What":"Ambitious","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"%","Description":"Ambition Trait"},{"What":"Orator","Comparison":">","Value":0,"Stack":true,"Bonus":10,"Sign":"%","Attribute":"Oratoria","Description":"Oratory traits"},{"What":"Consul","Comparison":">","Value":0,"Stack":true,"Bonus":-90,"Sign":"%","Description":"This office is beneath a consul"},{"What":"Mood","Comparison":"=","Value":"Confident","Bonus":10,"Sign":"%","Description":"Confident Mood"},{"What":"Age","Comparison":">","Value":60,"Stack":true,"Bonus":-2,"Sign":"+","Description":"Too old"},{"What":"Ex Tribunus Plebis","Comparison":">","Value":0,"Bonus":-50,"Sign":"%","Description":"Former Tribunus Plebis"},{"What":"Tribunus Plebis","Comparison":">","Value":0,"Bonus":-90,"Sign":"%","Description":"Re-election"},{"What":"Elected","Comparison":">","Value":0,"Bonus":-100,"Sign":"%","Description":"Already elected"}]}}
+{
+  "REF": {
+    "-------------------- OTHER --------------------": "Ex Tribunus Plebis",
+    "Creating": "Joining",
+    ">": "<=",
+    "%": "-",
+    "Anyone": "Against (unfinished)",
+    "--- OPTIONAL ---": "Very Hard"
+  },
+  "Sample": {},
+  "HEAD": {
+    "Image": 2,
+    "IsOn": "RandomEnemy",
+    "Targets": "Always",
+    "TargetSide": "Creator",
+    "AITargetChoice": "Change",
+    "Description": {
+      "Regular": "Joining",
+      "Failure": "TraitLadder",
+      "Success": "false"
+    },
+    "MainStat": 100,
+    "Custom": [
+      {
+        "Stat": "Side",
+        "Bonus": "Sign"
+      },
+      {
+        "Stat": "For",
+        "Bonus": "+"
+      },
+      {
+        "Stat": "Against",
+        "Bonus": "%"
+      }
+    ],
+    "Time": "Ex Tribunus Plebis"
+  },
+  "Buy Gladiator": {
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Administratio",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": -100
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Has Gladiator",
+        "Value": 1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Has Gladiator",
+        "Comparison": "=",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Gold",
+        "Comparison": ">=",
+        "Value": 100
+      }
+    ]
+  },
+  "Train Gladiator": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Importance": "Low",
+    "Difficulty": "Medium",
+    "MainStat": "Martialis",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Trainer",
+        "Value": 1,
+        "Chance": 25
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Has Gladiator",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Has Gladiator",
+        "Value": -1,
+        "Chance": 30,
+        "Description": "Training backfires"
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Has Gladiator",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Fighter",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Saturnalia": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Description": {
+      "Regular": "Io Saturnalia!"
+    },
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Always",
+        "Who": "Worst Contributor",
+        "Type": "Change",
+        "What": "Happy",
+        "Value": 1,
+        "Description": "King of the Saturnalia"
+      },
+      {
+        "When": "Success",
+        "Who": "Top Contributor",
+        "Type": "Change",
+        "What": "Religious",
+        "Value": 1,
+        "Chance": 25
+      },
+      {
+        "When": "Success",
+        "Who": "Random Character",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": 100,
+        "Chance": 20,
+        "Description": "Gambling"
+      },
+      {
+        "When": "Failure",
+        "Who": "Random Character",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": -100,
+        "Chance": 20,
+        "Description": "Gambling"
+      },
+      {
+        "When": "Always",
+        "Who": "Random Character",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": -10,
+        "Chance": 50,
+        "Description": "Gift-giving"
+      },
+      {
+        "When": "Always",
+        "Who": "Random Character",
+        "Type": "Change",
+        "What": "Sober",
+        "Value": -1,
+        "Chance": 10
+      },
+      {
+        "When": "Always",
+        "Who": "Random Character",
+        "Type": "Change",
+        "What": "Gambling",
+        "Value": 1,
+        "Chance": 10
+      },
+      {
+        "When": "Failure",
+        "Who": "Top Contributor",
+        "Type": "Change",
+        "What": "Fortuna",
+        "Value": -1,
+        "Chance": 10,
+        "Description": "Gods angered"
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Religious",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Curse": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "WorstEnemy",
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Fortuna",
+        "Value": -1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Fortuna",
+        "Value": -1,
+        "Description": "Curse backfires"
+      },
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Kind",
+        "Value": -1,
+        "Chance": 50
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Religious",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Relationships.$Target.Relationship",
+        "Comparison": "<",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Religious",
+        "Who": "Target",
+        "Comparison": "<",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 5,
+        "Sign": "+",
+        "WhoGets": "Target",
+        "Attribute": "Oratoria",
+        "Description": "Skepticism"
+      }
+    ]
+  },
+  "Lustratio": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Fortuna",
+        "Value": 0
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Fortuna",
+        "Value": -1,
+        "Chance": 30,
+        "Description": "Gods angered"
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Fortuna",
+        "Comparison": "<",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Religious",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Watch Auspices": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Description": {
+      "Regular": "Birds fly upon the sky of the Forum. Atop the steps of a temple, a dark-hooded priest looks up, watching. His eyes read the words of Jupiter in the flight of the birds, his ears listen to the voice of Venus in their singing.\n\n[i]What are the gods saying?[/i]",
+      "Success": "After several minutes watching the birds, the augur turns to the crowd and makes an announcement: the auspices are good! <Creator.Name> feels inspired.\n\nThe gods smile upon the Romans – at least today.",
+      "Failure": "The augur goes back into the temple. Were the omens favorable? <Creator.Name> was distracted by something (or someone) and didn't catch it. Perhaps this is a personal omen?"
+    },
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Religious",
+        "Value": 1,
+        "Chance": 50
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Religious",
+        "Value": -1,
+        "Chance": 50,
+        "Description": "Screw this"
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Fortuna",
+        "Value": 1,
+        "Chance": 20,
+        "Description": "Good omens"
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Fortuna",
+        "Value": -1,
+        "Chance": 10,
+        "Description": "Bad omens"
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Religious",
+        "Comparison": ">=",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Religious",
+        "Comparison": "<",
+        "Value": 3
+      }
+    ]
+  },
+  "Insult": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "AITargetChoice": "RandomEnemy",
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -1,
+        "Chance": 50
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Kind",
+        "Comparison": "<",
+        "Value": 0
+      },
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Relationships.$Target.Relationship",
+        "Comparison": "<",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Stoic",
+        "Who": "Target",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "+",
+        "WhoGets": "Target"
+      }
+    ]
+  },
+  "Write Religious Poem": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Fortuna",
+        "Value": 1,
+        "Chance": 50
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Religious",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Poet",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Question Religion": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "Description": {
+      "Regular": "<Target.Name>: If the gods don't exist, then how come there are all these votive images of people who have survived sea storms by praying to the gods?\n\n<Creator.Name>: Well, where are all the images of those who suffered shipwreck and died?",
+      "Success": "<Creator.Name>'s argument, reminiscent of the Greek philosopher Diagoras of Melos, undermined <Target.Name>'s beliefs."
+    },
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Religious",
+        "Value": -1,
+        "Chance": 50
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Religious",
+        "Value": -1,
+        "Chance": 50
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Religious",
+        "Comparison": "<",
+        "Value": 0
+      },
+      {
+        "When": "Targeting",
+        "What": "Religious",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Pietas",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": -50,
+        "Sign": "%",
+        "Attribute": "Pietas",
+        "Side": "For"
+      },
+      {
+        "What": "Pietas",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": 50,
+        "Sign": "%",
+        "Attribute": "Pietas",
+        "Side": "Against"
+      }
+    ]
+  },
+  "Read Epicurus": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Epicurean",
+        "Value": 1,
+        "Chance": 50
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Religious",
+        "Value": -1,
+        "Chance": 50
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Religious",
+        "Value": 1,
+        "Chance": 50
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Religious",
+        "Comparison": "<",
+        "Value": 0
+      }
+    ]
+  },
+  "Accuse of Hedonism": {
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -1
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Reputation",
+        "Value": -1,
+        "Chance": 30
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Targeting",
+        "What": "Epicurean",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Religious",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Renounce Epicurus": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Epicurean",
+        "Value": 0,
+        "Chance": 100
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Reputation",
+        "Value": 1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Epicurean",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Reputation",
+        "Comparison": "<",
+        "Value": 0
+      }
+    ]
+  },
+  "Share Skepticism": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "TargetSide": "For",
+    "AITargetChoice": "Random",
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Religious",
+        "Value": -1,
+        "Chance": 20
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Religious",
+        "Value": -1,
+        "Chance": 20
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Religious",
+        "Comparison": "<",
+        "Value": 0
+      },
+      {
+        "When": "Targeting",
+        "What": "Religious",
+        "Comparison": "<",
+        "Value": 0
+      }
+    ]
+  },
+  "Gladiator Duel": {
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "AITargetChoice": "Random",
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Failure",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Has Gladiator",
+        "Value": 1,
+        "Chance": 50
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Has Gladiator",
+        "Value": 1,
+        "Chance": 50
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Has Gladiator",
+        "Value": -1,
+        "Chance": 30
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Has Gladiator",
+        "Value": 0,
+        "Chance": 5,
+        "Description": "Dies in combat"
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Has Gladiator",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Targeting",
+        "Who": "Target",
+        "What": "Has Gladiator",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Throw Gladiatorial Fight": {
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Administratio",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Has Gladiator",
+        "Value": 1,
+        "Chance": 50
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Has Gladiator",
+        "Value": -1,
+        "Chance": 30
+      },
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Has Gladiator",
+        "Value": 0,
+        "Chance": 5,
+        "Description": "Death in combat"
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Organized",
+        "Value": 1,
+        "Chance": 50
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Organized",
+        "Value": -1,
+        "Chance": 20
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Has Gladiator",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Gold",
+        "Comparison": ">=",
+        "Value": 50,
+        "IsCost": true
+      }
+    ]
+  },
+  "Retire Gladiator": {
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Administratio",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 3
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Lawfulness",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Has Gladiator",
+        "Value": 0,
+        "Description": "Retired"
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Has Gladiator",
+        "Comparison": ">=",
+        "Value": 5
+      }
+    ]
+  },
+  "Form Gladiatorial Bodyguard": {
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Administratio",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -2
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gladiatorial Bodyguard",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Has Gladiator",
+        "Value": 0,
+        "Description": "Becomes bodyguard"
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Has Gladiator",
+        "Comparison": ">=",
+        "Value": 4
+      }
+    ]
+  },
+  "Begin Training": {
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Martialis",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Training",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Warlike",
+        "Value": -1,
+        "Chance": 25
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": -100
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Warlike",
+        "Comparison": ">=",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Training",
+        "Comparison": "=",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Gold",
+        "Comparison": ">=",
+        "Value": 100
+      }
+    ]
+  },
+  "Train Riding": {
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Difficulty": "Very Easy",
+    "MainStat": "Martialis",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Rider",
+        "Value": 1
+      },
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Training",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Rider",
+        "Value": -1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Training",
+        "Comparison": ">",
+        "Value": 0,
+        "Description": "Has begun training"
+      },
+      {
+        "When": "Creating",
+        "What": "Training",
+        "Comparison": "<",
+        "Value": 3,
+        "Description": "Not done training"
+      }
+    ]
+  },
+  "Go Hunting": {
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Difficulty": "Easy",
+    "MainStat": "Martialis",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Rider",
+        "Value": 1,
+        "Chance": 10
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Hunter",
+        "Value": 1,
+        "Chance": 40
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Injured",
+        "Value": -1,
+        "Chance": 50
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Rider",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Train Combat": {
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Difficulty": "Very Easy",
+    "MainStat": "Martialis",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Fighter",
+        "Value": 1
+      },
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Training",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Fighter",
+        "Value": -1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Training",
+        "Comparison": ">",
+        "Value": 0,
+        "Description": "Has begun training"
+      },
+      {
+        "When": "Creating",
+        "What": "Training",
+        "Comparison": "<",
+        "Value": 3,
+        "Description": "Not done training"
+      }
+    ]
+  },
+  "Learn Tactics": {
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Difficulty": "Easy",
+    "MainStat": "Martialis",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Commander",
+        "Value": 1
+      },
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Training",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Commander",
+        "Value": -1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Training",
+        "Comparison": ">",
+        "Value": 0,
+        "Description": "Has begun training"
+      },
+      {
+        "When": "Creating",
+        "What": "Training",
+        "Comparison": "<",
+        "Value": 3,
+        "Description": "Not done training"
+      }
+    ]
+  },
+  "Sabotage Training": {
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "AITargetChoice": "WorstEnemy",
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Training",
+        "Value": 1,
+        "Description": "Force target to skip a training session"
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Rider",
+        "Value": -1,
+        "Chance": 10
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Commander",
+        "Value": -1,
+        "Chance": 10
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Fighter",
+        "Value": -1,
+        "Chance": 10
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Target",
+        "What": "Training",
+        "Comparison": ">",
+        "Value": 0,
+        "Description": "Target is training"
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Scheming",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Wrestle": {
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "MainStat": "Martialis",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Fighter",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Fighter",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Fighter",
+        "Value": -1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Fighter",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Antagonize": {
+    "Image": "Speech",
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "AITargetChoice": "RandomEnemy",
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -5
+      }
+    ]
+  },
+  "Steal": {
+    "Image": "Speech",
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "AITargetChoice": "RandomEnemy",
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 2
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -2
+      }
+    ]
+  },
+  "Cooperate": {
+    "Image": "Speech",
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "TargetSide": "For",
+    "AITargetChoice": "RandomFriend",
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 3
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 3
+      }
+    ]
+  },
+  "Grant Favor": {
+    "Image": "Speech",
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "TargetSide": "For",
+    "AITargetChoice": "RandomFriend",
+    "MainStat": "Administratio",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 3
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 3
+      }
+    ]
+  },
+  "Overtake Patron": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Importance": "Very High",
+    "Difficulty": "Medium",
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "WorstEnemy",
+    "Description": {
+      "Failure": "<TopContributor.Name> was instrumental in maintaining the status quo."
+    },
+    "MainStat": "Martialis",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -1,
+        "Special": "OvertakePatron"
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -10,
+        "Description": "Oathbreaking"
+      },
+      {
+        "When": "Failure",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 1,
+        "Description": "Rebellion supressed"
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -5
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Social Mobility",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Social Mobility",
+        "Value": -1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Patron",
+        "Comparison": "=",
+        "Value": "$Target.Num"
+      },
+      {
+        "When": "Creating",
+        "What": "Patron",
+        "Comparison": "!=",
+        "Value": 0
+      },
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Auctoritas",
+        "Comparison": ">",
+        "Value": "$Target.Auctoritas"
+      },
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Relationships.$Target.Relationship",
+        "Comparison": "<",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Auctoritas",
+        "Who": "Anyone",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 1,
+        "Sign": "+",
+        "WhoGets": "Anyone"
+      },
+      {
+        "What": "Leader",
+        "Who": "Target",
+        "Comparison": "<",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": -10,
+        "Sign": "+",
+        "WhoGets": "Target",
+        "Description": "Lack of leadership"
+      }
+    ]
+  },
+  "Self-promote": {
+    "Image": "Speech",
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 1
+      }
+    ]
+  },
+  "Deepen Friendship": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Targets": 1,
+    "TargetSide": "For",
+    "AITargetChoice": "RandomFriend",
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Relationships.$Target.Relationship",
+        "Value": 5
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Relationships.$Creator.Relationship",
+        "Value": 5
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Social",
+        "Comparison": ">",
+        "Value": 1
+      },
+      {
+        "When": "Targeting",
+        "Who": "Target",
+        "What": "Relationships.$Creator.Relationship",
+        "Comparison": ">=",
+        "Value": 20
+      }
+    ]
+  },
+  "Offer Bad Deal": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "RandomEnemy",
+    "MainStat": "Administratio",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": 30
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": -30
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": -30
+      },
+      {
+        "When": "Failure",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": 30
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Scheming",
+        "Comparison": ">=",
+        "Value": 1
+      },
+      {
+        "When": "Targeting",
+        "Who": "Target",
+        "What": "Gold",
+        "Comparison": ">=",
+        "Value": 30
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Business",
+        "Comparison": ">=",
+        "Value": 1
+      },
+      {
+        "When": "Targeting",
+        "Who": "Target",
+        "What": "Scheming",
+        "Comparison": "<",
+        "Value": 0
+      }
+    ]
+  },
+  "Make Amends": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "RandomEnemy",
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Relationships.$Target.Relationship",
+        "Value": 0
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Set",
+        "What": "Relationships.$Creator.Relationship",
+        "Value": 0
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Relationships.$Target.Relationship",
+        "Comparison": "<",
+        "Value": -40
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Social",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Help Quit Drinking": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "RandomFriend",
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Relationships.$Target.Relationship",
+        "Value": 5
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Set",
+        "What": "Sober",
+        "Value": 4
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Relationships.$Target.Relationship",
+        "Comparison": ">",
+        "Value": 20,
+        "Description": "Cares about person"
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Social",
+        "Comparison": ">",
+        "Value": 0,
+        "Description": "Is Social"
+      },
+      {
+        "When": "Targeting",
+        "Who": "Target",
+        "What": "Sober",
+        "Comparison": "<=",
+        "Value": -2,
+        "Description": "Person drinks heavily"
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Sober",
+        "Who": "For",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 3,
+        "Sign": "+"
+      },
+      {
+        "What": "Sober",
+        "Comparison": "=",
+        "Value": 4,
+        "Bonus": 5,
+        "Sign": "+",
+        "Description": "Been through this"
+      },
+      {
+        "What": "Sober",
+        "Who": "Creator",
+        "Comparison": "<",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 3,
+        "Sign": "-"
+      }
+    ]
+  },
+  "Promote Person": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Targets": 1,
+    "TargetSide": "For",
+    "AITargetChoice": "RandomFriend",
+    "MainStat": "Administratio",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 3
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Social",
+        "Comparison": ">=",
+        "Value": 3
+      }
+    ]
+  },
+  "Offer a Drink": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "Random",
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Set",
+        "What": "Sober",
+        "Value": -3
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Relationships.$Target.Relationship",
+        "Comparison": "<",
+        "Value": -20,
+        "Description": "Dislikes person"
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Scheming",
+        "Comparison": ">=",
+        "Value": 1,
+        "Description": "Is Scheming"
+      },
+      {
+        "When": "Targeting",
+        "Who": "Target",
+        "What": "Sober",
+        "Comparison": "=",
+        "Value": 4,
+        "Description": "Person is sober"
+      }
+    ]
+  },
+  "Slander": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "WorstEnemy",
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -3
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Honestas",
+        "Value": -1
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Reputation",
+        "Value": -1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Scheming",
+        "Comparison": ">=",
+        "Value": 2
+      }
+    ]
+  },
+  "Gossip": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "WorstEnemy",
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Honestas",
+        "Value": -1,
+        "Chance": 50
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Scheming",
+        "Value": 1,
+        "Chance": 30
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Scheming",
+        "Comparison": ">=",
+        "Value": 1
+      }
+    ]
+  },
+  "Play Latrones": {
+    "Image": "Speech",
+    "IsOn": true,
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gambler",
+        "Value": 1,
+        "Chance": 25
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Scheming",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Scheming",
+        "Value": -1,
+        "Chance": 80
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Sober",
+        "Comparison": "<=",
+        "Value": -1
+      }
+    ]
+  },
+  "Gamble": {
+    "Image": "Speech",
+    "IsOn": true,
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Honorable",
+        "Value": -1,
+        "Chance": 30
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": 100
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Gambler",
+        "Comparison": ">=",
+        "Value": 1
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Gold",
+        "Comparison": ">=",
+        "Value": 50,
+        "IsCost": true
+      }
+    ]
+  },
+  "Hire Assassin": {
+    "Image": "Speech",
+    "IsOn": true,
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Has Assassin",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": -100
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Honorable",
+        "Comparison": "<",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Gold",
+        "Comparison": ">=",
+        "Value": 100
+      }
+    ]
+  },
+  "Assassinate": {
+    "IsOn": true,
+    "Targets": 1,
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Murderer",
+        "Value": 1,
+        "Chance": 50
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Set",
+        "What": "Health",
+        "Value": -100,
+        "Special": "Kill"
+      },
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Has Assassin",
+        "Value": 0
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Has Assassin",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Visit Tavern": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Description": {
+      "Regular": "<Creator.Name> is going to the [i]popina[/i] to have a couple of drinks and some fun. All a Roman needs is a strong wine, a shady friend and a loaded die.",
+      "Success": "<Creator.Name>'s night at the [i]popina[/i] was a success!",
+      "Failure": "It turns out that the [i]popina[/i] isn't the place for <Creator.Name> afterall."
+    },
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Happy",
+        "Value": 1,
+        "Description": "Had a good time"
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Sober",
+        "Value": -1,
+        "Description": "Drank lots of wine"
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Sober",
+        "Value": 1,
+        "Chance": 50,
+        "Description": "Why drink anyway?"
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Sober",
+        "Comparison": "<",
+        "Value": 2,
+        "Description": "Not sober enough"
+      },
+      {
+        "When": "Joining",
+        "What": "Sober",
+        "Comparison": "<",
+        "Value": 3,
+        "Description": "Not sober enough"
+      },
+      {
+        "When": "Creating",
+        "What": "Sober",
+        "Comparison": ">",
+        "Value": -3,
+        "Description": "Not too drunk to leave home"
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Social",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": 5,
+        "Sign": "+",
+        "Attribute": "Oratoria",
+        "Description": "Good conversation"
+      }
+    ]
+  },
+  "Prosecute": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "RandomEnemy",
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": -100
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -10
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -20
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Law",
+        "Value": -1,
+        "Chance": 50
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Targeting",
+        "Who": "Target",
+        "What": "Honest",
+        "Comparison": "<",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Law",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 20,
+        "IsCost": true
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Honest",
+        "Who": "Target",
+        "Comparison": "TraitLadder",
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "+"
+      }
+    ]
+  },
+  "Prosecute Unjustly": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "RandomEnemy",
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": -100
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -10
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -20
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Honest",
+        "Comparison": "<",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Honest",
+        "Who": "Target",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "+"
+      }
+    ]
+  },
+  "Bribe": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "WorstEnemy",
+    "MainStat": "Administratio",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Relationships.$Creator.Relationship",
+        "Value": 10
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": 50
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": 50,
+        "Description": "Offer refused."
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -5
+      },
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Honest",
+        "Value": -1,
+        "Chance": 20
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Honest",
+        "Value": -1,
+        "Chance": 20
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Honest",
+        "Comparison": "<",
+        "Value": 0,
+        "Description": "$Creator.Mood"
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 50,
+        "IsCost": true
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Honest",
+        "Who": "Target",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "+"
+      }
+    ]
+  },
+  "Study Law": {
+    "IsOn": true,
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Law",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Law",
+        "Value": -1,
+        "Chance": 50
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Lawful",
+        "Value": 1,
+        "Chance": 10
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Lawful",
+        "Value": -1,
+        "Chance": 10
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Law",
+        "Comparison": "<",
+        "Value": 2
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Orator",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Socialize at the Baths": {
+    "IsOn": true,
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Health",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Bather",
+        "Value": 1,
+        "Chance": 20
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Bather",
+        "Value": -1,
+        "Chance": 30
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Health",
+        "Value": -1,
+        "Chance": 20,
+        "Description": "Infection."
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Social",
+        "Value": 1,
+        "Chance": 70
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Social",
+        "Value": -1,
+        "Chance": 50
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 10,
+        "IsCost": true
+      },
+      {
+        "When": "Joining",
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 10,
+        "IsCost": true
+      },
+      {
+        "When": "Creating",
+        "What": "Social",
+        "Comparison": "<",
+        "Value": 3
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Slaves",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 2,
+        "Sign": "+",
+        "Description": "Boy, hold my strigil (Slaves trait)"
+      },
+      {
+        "What": "Bather",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 5,
+        "Sign": "+",
+        "Description": "At home in the baths (Bather trait)"
+      }
+    ]
+  },
+  "Exercise at Baths": {
+    "IsOn": true,
+    "MainStat": "Martialis",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Health",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Fit",
+        "Value": 1,
+        "Chance": 50
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 10,
+        "IsCost": true
+      },
+      {
+        "When": "Joining",
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 10,
+        "IsCost": true
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Bather",
+        "Comparison": ">",
+        "Value": 1
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Slaves",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 2,
+        "Sign": "+",
+        "Description": "Boy, hold my strigil (Slaves trait)"
+      },
+      {
+        "What": "Bather",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 5,
+        "Sign": "+",
+        "Description": "At home in the baths (Bather trait)"
+      }
+    ]
+  },
+  "Read at Baths": {
+    "IsOn": true,
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Happy",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Poet",
+        "Value": 1,
+        "Chance": 30
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 10,
+        "IsCost": true
+      },
+      {
+        "When": "Joining",
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 10,
+        "IsCost": true
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Bather",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Slaves",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 2,
+        "Sign": "+",
+        "Description": "Boy, hold my strigil (Slaves trait)"
+      },
+      {
+        "What": "Bather",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 5,
+        "Sign": "+",
+        "Description": "At home in the baths (Bather trait)"
+      }
+    ]
+  },
+  "Write Satirical Poem": {
+    "IsOn": true,
+    "Targets": 1,
+    "AITargetChoice": "RandomEnemy",
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Poet",
+        "Value": 1,
+        "Chance": 30
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Poet",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Scheming",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Write Epic Poem": {
+    "IsOn": true,
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Poet",
+        "Value": 1,
+        "Chance": 30
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Poet",
+        "Value": -1,
+        "Chance": 70
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Poet",
+        "Comparison": ">=",
+        "Value": 2
+      },
+      {
+        "When": "Creating",
+        "What": "Scheming",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Ruin Crops": {
+    "IsOn": true,
+    "Difficulty": "Easy",
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "WorstEnemy",
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Crops",
+        "Value": -1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -1
+      },
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Corruption",
+        "Value": 1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Targeting",
+        "Who": "Target",
+        "What": "Crops",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Relationships.$Target.Relationship",
+        "Comparison": "<",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 20,
+        "IsCost": true
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Scheming",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Take Loan": {
+    "MainStat": "Administratio",
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Gold",
+        "Comparison": "<",
+        "Value": 15
+      }
+    ],
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": 15
+      }
+    ]
+  },
+  "Manage Finances": {
+    "IsOn": true,
+    "MainStat": "Administratio",
+    "Effects": [
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Business",
+        "Value": -1,
+        "Chance": 50
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": 100
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Business",
+        "Value": 1,
+        "Chance": 50
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": 10
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Business",
+        "Comparison": "<",
+        "Value": 3
+      }
+    ]
+  },
+  "Buy Land": {
+    "IsOn": true,
+    "MainStat": "Administratio",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Land Size",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": -70
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Gold",
+        "Comparison": ">=",
+        "Value": 70
+      },
+      {
+        "When": "Creating",
+        "What": "Land Size",
+        "Comparison": "<",
+        "Value": 3
+      }
+    ]
+  },
+  "Cultivate Crops": {
+    "IsOn": true,
+    "Difficulty": "Very Easy",
+    "MainStat": "Administratio",
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Crops",
+        "Comparison": "<",
+        "Value": 1
+      },
+      {
+        "When": "Creating",
+        "What": "Land Size",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Agriculture Gods",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "+"
+      },
+      {
+        "What": "Oratory Tutor",
+        "Comparison": "=",
+        "Value": -1,
+        "Bonus": 10,
+        "Sign": "+",
+        "Side": "For"
+      }
+    ],
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Crops",
+        "Value": 1
+      }
+    ]
+  },
+  "Harvest Crops": {
+    "IsOn": true,
+    "Difficulty": "Easy",
+    "MainStat": "Administratio",
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Crops",
+        "Comparison": "=",
+        "Value": 1
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Agriculture Gods",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "+"
+      }
+    ],
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": 200,
+        "Description": "Successful Harvest"
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Gold",
+        "Value": 100,
+        "Chance": 50,
+        "Description": "Plentiful Harvest"
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Crops",
+        "Value": -1,
+        "Description": "Failed Harvest"
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Crops",
+        "Value": 0
+      },
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Agriculture Gods",
+        "Value": 0
+      }
+    ]
+  },
+  "Cereal Rites": {
+    "IsOn": true,
+    "Difficulty": "Easy",
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Agriculture Gods",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Crops",
+        "Value": 1,
+        "Chance": 20
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Land Size",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 10,
+        "IsCost": true
+      },
+      {
+        "When": "Creating",
+        "What": "Agriculture Gods",
+        "Comparison": "<",
+        "Value": 3
+      }
+    ]
+  },
+  "Find Tutor": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Oratory Tutor",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Oratory Tutor",
+        "Value": -1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Oratory Tutor",
+        "Comparison": ">",
+        "Value": -2
+      },
+      {
+        "When": "Creating",
+        "What": "Oratory Tutor",
+        "Comparison": "<",
+        "Value": 3
+      },
+      {
+        "When": "Creating",
+        "What": "Age",
+        "Comparison": ">",
+        "Value": 14
+      },
+      {
+        "When": "Creating",
+        "What": "Orator",
+        "Comparison": "=",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 50,
+        "IsCost": true
+      },
+      {
+        "When": "Creating",
+        "What": "Social",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Oratory Tutor",
+        "Who": "Creator",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": -20,
+        "Sign": "%",
+        "WhoGets": "Creator",
+        "Description": "Current tutor doesn't want to go."
+      },
+      {
+        "What": "Gender",
+        "Who": "Creator",
+        "Comparison": "=",
+        "Value": "Female",
+        "Bonus": -50,
+        "Sign": "%"
+      }
+    ]
+  },
+  "Replace Tutor": {
+    "Image": "Speech",
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Oratory Tutor",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Oratory Tutor",
+        "Value": -1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Oratory Tutor",
+        "Comparison": ">",
+        "Value": -2
+      },
+      {
+        "When": "Creating",
+        "What": "Oratory Tutor",
+        "Comparison": "<",
+        "Value": 3
+      },
+      {
+        "When": "Creating",
+        "What": "Age",
+        "Comparison": ">",
+        "Value": 14
+      },
+      {
+        "When": "Creating",
+        "What": "Orator",
+        "Comparison": "=",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 50,
+        "IsCost": true
+      },
+      {
+        "When": "Creating",
+        "What": "Oratory Tutor",
+        "Comparison": "!=",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Oratory Tutor",
+        "Who": "Creator",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": -20,
+        "Sign": "%",
+        "WhoGets": "Creator",
+        "Description": "Current tutor doesn't want to go."
+      },
+      {
+        "What": "Gender",
+        "Who": "Creator",
+        "Comparison": "=",
+        "Value": "Female",
+        "Bonus": -50,
+        "Sign": "%"
+      }
+    ]
+  },
+  "Study Rhetoric": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Memory",
+        "Value": 1,
+        "Outcome": 1,
+        "OutcomeChance": 100
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Memory",
+        "Value": -1,
+        "Chance": 50
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Oratory Style",
+        "Value": 1,
+        "Chance": 20
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Oratory Style",
+        "Value": -1,
+        "Chance": 20
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Oratory Tutor",
+        "Comparison": "!=",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Oratory Tutor",
+        "Who": "Creator",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "%",
+        "WhoGets": "Creator",
+        "Description": "Tutor help"
+      },
+      {
+        "What": "Gender",
+        "Who": "Creator",
+        "Comparison": "=",
+        "Value": "Female",
+        "Bonus": -50,
+        "Sign": "%"
+      }
+    ]
+  },
+  "Finish Oratory Studies": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Oratory Tutor",
+        "Value": 0
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Orator",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Orator",
+        "Value": -1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Oratory Tutor",
+        "Comparison": "!=",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Memory",
+        "Comparison": "!=",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "Description": "Current tutor doesn't want to go."
+      }
+    ]
+  },
+  "Supercede Patron": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Importance": "Very High",
+    "Difficulty": "Medium",
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "BestFriend",
+    "Description": {
+      "Failure": "$TopContributor was instrumental in maintaining the status quo."
+    },
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -1,
+        "Special": "OvertakePatron"
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Relationships.$Target.Relationship",
+        "Value": 10,
+        "Description": "Rebellion supressed"
+      },
+      {
+        "When": "Failure",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -5
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Patron",
+        "Comparison": "=",
+        "Value": "$Target.Num"
+      },
+      {
+        "When": "Creating",
+        "What": "Patron",
+        "Comparison": "!=",
+        "Value": 0
+      },
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Auctoritas",
+        "Comparison": ">",
+        "Value": "$Target.Auctoritas"
+      },
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Relationships.$Target.Relationship",
+        "Comparison": ">",
+        "Value": 50
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Auctoritas",
+        "Who": "Anyone",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 1,
+        "Sign": "+",
+        "WhoGets": "Anyone"
+      },
+      {
+        "What": "Leader",
+        "Who": "Target",
+        "Comparison": "<",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": -10,
+        "Sign": "+",
+        "WhoGets": "Target",
+        "Description": "Lack of leadership"
+      }
+    ]
+  },
+  "Betray Patron": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Importance": "Very High",
+    "Difficulty": "Medium",
+    "Targets": 1,
+    "TargetSide": "Against",
+    "AITargetChoice": "WorstEnemy",
+    "Description": {
+      "Failure": "$TopContributor was instrumental in maintaining the status quo."
+    },
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -1,
+        "Special": "OvertakePatron"
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Relationships.$Target.Relationship",
+        "Value": 10,
+        "Description": "Rebellion supressed"
+      },
+      {
+        "When": "Failure",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -5
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Patron",
+        "Comparison": "=",
+        "Value": "$Target.Num"
+      },
+      {
+        "When": "Creating",
+        "What": "Patron",
+        "Comparison": "!=",
+        "Value": 0
+      },
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Dignitas",
+        "Comparison": ">",
+        "Value": "$Target.Dignitas"
+      },
+      {
+        "When": "Targeting",
+        "Who": "Creator",
+        "What": "Relationships.$Target.Relationship",
+        "Comparison": ">",
+        "Value": 40
+      },
+      {
+        "When": "Creating",
+        "What": "Scheming",
+        "Comparison": ">=",
+        "Value": 2
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Auctoritas",
+        "Who": "Anyone",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 1,
+        "Sign": "+",
+        "WhoGets": "Anyone"
+      },
+      {
+        "What": "Leader",
+        "Who": "Target",
+        "Comparison": "<",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": -10,
+        "Sign": "+",
+        "WhoGets": "Target",
+        "Description": "Lack of leadership"
+      }
+    ]
+  },
+  "Give Speech": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Oratoria",
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Orator",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Commander",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": 10,
+        "Sign": "%",
+        "Attribute": "Martialis"
+      }
+    ],
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Orator",
+        "Value": 1,
+        "Chance": 10
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 1
+      }
+    ]
+  },
+  "Give Drunken Speech": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Thriving",
+        "Value": -1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Orator",
+        "Value": 1,
+        "Chance": 5
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Orator",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Sober",
+        "Comparison": "<",
+        "Value": -1
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Commander",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": 10,
+        "Sign": "%",
+        "Attribute": "Martialis"
+      }
+    ]
+  },
+  "Quit Drinking": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Thriving",
+        "Value": -1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Sober",
+        "Value": 4
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Thriving",
+        "Comparison": "<",
+        "Value": 0
+      }
+    ]
+  },
+  "Ad Hominem": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "AITargetChoice": "RandomEnemy",
+    "MainStat": "Oratoria",
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Orator",
+        "Comparison": "<",
+        "Value": 0
+      }
+    ],
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Orator",
+        "Value": -1
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -1
+      }
+    ]
+  },
+  "Debate Law": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "Targets": 1,
+    "AITargetChoice": "Random",
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Always",
+        "Who": "Top Winner (unfinished)",
+        "Type": "Change",
+        "What": "Law",
+        "Value": 1,
+        "Chance": 20
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Dignitas",
+        "Value": -1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Law",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Targeting",
+        "What": "Law",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  " -- ELECTIONS --": {},
+  "Consul Elections": {
+    "Image": "Speech",
+    "Circles": [
+      {
+        "Circle": "Public"
+      }
+    ],
+    "Importance": "Medium",
+    "Time": 10,
+    "Type": "Public",
+    "Elections": {
+      "Office": "Consul",
+      "Holders": 2
+    },
+    "Description": {
+      "Regular": "Elections for the office of Consul."
+    },
+    "MainStat": "Martialis",
+    "Effects": [
+      {
+        "When": "Always",
+        "Who": "Top",
+        "Count": 2,
+        "Type": "Change",
+        "What": "Elected",
+        "Detail": "Consul",
+        "Value": 1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Joining",
+        "What": "Auctoritas",
+        "Comparison": ">",
+        "Value": 50
+      },
+      {
+        "When": "Joining",
+        "What": "Elected",
+        "Comparison": "=",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Auctoritas",
+        "Who": "Anyone",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 1,
+        "Sign": "+",
+        "WhoGets": "Anyone",
+        "Description": "Auctoritas"
+      },
+      {
+        "What": "Age",
+        "Comparison": "<",
+        "Value": 40,
+        "Stack": true,
+        "Bonus": -2,
+        "Sign": "+",
+        "Description": "Too young"
+      },
+      {
+        "What": "Ambitious",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "%",
+        "Description": "Ambition Trait"
+      },
+      {
+        "What": "Orator",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "%",
+        "Attribute": "Oratoria",
+        "Description": "Oratory traits"
+      },
+      {
+        "What": "Consul",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": -40,
+        "Sign": "%",
+        "Description": "Re-election"
+      },
+      {
+        "What": "Mood",
+        "Comparison": "=",
+        "Value": "Confident",
+        "Bonus": 10,
+        "Sign": "%",
+        "Description": "Confident Mood"
+      },
+      {
+        "What": "Age",
+        "Comparison": ">",
+        "Value": 50,
+        "Stack": true,
+        "Bonus": -2,
+        "Sign": "+",
+        "Description": "Too old"
+      },
+      {
+        "What": "Ex Praetor",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": 20,
+        "Sign": "%",
+        "Description": "Ex Praetor"
+      },
+      {
+        "What": "Ex Consul",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": -30,
+        "Sign": "+",
+        "Description": "Ex Consul"
+      }
+    ]
+  },
+  "Praetor Elections": {
+    "Image": "Speech",
+    "Circles": [
+      {
+        "Circle": "Public"
+      }
+    ],
+    "Importance": "Medium",
+    "Time": 10,
+    "Type": "Public",
+    "Elections": {
+      "Office": "Praetor",
+      "Holders": 1
+    },
+    "Description": {
+      "Regular": "Elections for the office of Praetor"
+    },
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Always",
+        "Who": "Top",
+        "Count": 1,
+        "Type": "Change",
+        "What": "Elected",
+        "Detail": "Praetor",
+        "Value": 1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Joining",
+        "What": "Auctoritas",
+        "Comparison": ">",
+        "Value": 40
+      },
+      {
+        "When": "Joining",
+        "What": "Elected",
+        "Comparison": "=",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Law",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "+",
+        "Description": "Law Trait"
+      },
+      {
+        "What": "Auctoritas",
+        "Who": "Anyone",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 1,
+        "Sign": "+",
+        "WhoGets": "Anyone",
+        "Description": "Auctoritas"
+      },
+      {
+        "What": "Age",
+        "Comparison": "<",
+        "Value": 32,
+        "Stack": true,
+        "Bonus": -2,
+        "Sign": "+",
+        "Description": "Too young"
+      },
+      {
+        "What": "Ambitious",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "%",
+        "Description": "Ambition Trait"
+      },
+      {
+        "What": "Orator",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "%",
+        "Attribute": "Oratoria",
+        "Description": "Oratory traits"
+      },
+      {
+        "What": "Consul",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": -90,
+        "Sign": "%",
+        "Description": "This office is beneath a consul"
+      },
+      {
+        "What": "Mood",
+        "Comparison": "=",
+        "Value": "Confident",
+        "Bonus": 10,
+        "Sign": "%",
+        "Description": "Confident Mood"
+      },
+      {
+        "What": "Age",
+        "Comparison": ">",
+        "Value": 40,
+        "Stack": true,
+        "Bonus": -2,
+        "Sign": "+",
+        "Description": "Too old"
+      },
+      {
+        "What": "Ex Aedile",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": 20,
+        "Sign": "%",
+        "Description": "Ex Aedile"
+      },
+      {
+        "What": "Ex Praetor",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": -50,
+        "Sign": "%",
+        "Description": "Former Praetor"
+      },
+      {
+        "What": "Praetor",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": -90,
+        "Sign": "%",
+        "Description": "Re-election"
+      },
+      {
+        "What": "Elected",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": -999,
+        "Sign": "%",
+        "Description": "Already elected"
+      }
+    ]
+  },
+  "Aedile Elections": {
+    "Image": "Speech",
+    "Circles": [
+      {
+        "Circle": "Public"
+      }
+    ],
+    "Importance": "Medium",
+    "Time": 10,
+    "Type": "Public",
+    "Elections": {
+      "Office": "Aedile",
+      "Holders": 4
+    },
+    "Description": {
+      "Regular": "Elections for the office of Aedile."
+    },
+    "MainStat": "Administratio",
+    "Effects": [
+      {
+        "When": "Always",
+        "Who": "Top",
+        "Count": 4,
+        "Type": "Change",
+        "What": "Elected",
+        "Detail": "Aedile",
+        "Value": 1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Joining",
+        "What": "Auctoritas",
+        "Comparison": ">",
+        "Value": 30
+      },
+      {
+        "When": "Joining",
+        "What": "Elected",
+        "Comparison": "=",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Auctoritas",
+        "Who": "Anyone",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 1,
+        "Sign": "+",
+        "WhoGets": "Anyone",
+        "Description": "Auctoritas"
+      },
+      {
+        "What": "Age",
+        "Comparison": "<",
+        "Value": 35,
+        "Stack": true,
+        "Bonus": -2,
+        "Sign": "+",
+        "Description": "Too young"
+      },
+      {
+        "What": "Ambitious",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "%",
+        "Description": "Ambition Trait"
+      },
+      {
+        "What": "Orator",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "%",
+        "Attribute": "Oratoria",
+        "Description": "Oratory traits"
+      },
+      {
+        "What": "Consul",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": -90,
+        "Sign": "%",
+        "Description": "This office is beneath a consul"
+      },
+      {
+        "What": "Mood",
+        "Comparison": "=",
+        "Value": "Confident",
+        "Bonus": 10,
+        "Sign": "%",
+        "Description": "Confident Mood"
+      },
+      {
+        "What": "Age",
+        "Comparison": ">",
+        "Value": 40,
+        "Stack": true,
+        "Bonus": -2,
+        "Sign": "+",
+        "Description": "Too old"
+      },
+      {
+        "What": "Elected",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": -999,
+        "Sign": "%",
+        "Description": "Already elected"
+      },
+      {
+        "What": "Ex Quaestor",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": 20,
+        "Sign": "%",
+        "Description": "Ex Quaestor"
+      },
+      {
+        "What": "Ex Aedile",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": -50,
+        "Sign": "%",
+        "Description": "Former Aedile"
+      },
+      {
+        "What": "Aedile",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": -90,
+        "Sign": "%",
+        "Description": "Re-election"
+      }
+    ]
+  },
+  "Quaestor Elections": {
+    "Image": "Speech",
+    "Circles": [
+      {
+        "Circle": "Public"
+      }
+    ],
+    "Importance": "Medium",
+    "Time": 10,
+    "Type": "Public",
+    "Elections": {
+      "Office": "Quaestor",
+      "Holders": 4
+    },
+    "Description": {
+      "Regular": "Elections for the office of Quaestor."
+    },
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Always",
+        "Who": "Top",
+        "Count": 4,
+        "Type": "Change",
+        "What": "Elected",
+        "Detail": "Quaestor",
+        "Value": 1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Joining",
+        "What": "Auctoritas",
+        "Comparison": ">",
+        "Value": 20
+      },
+      {
+        "When": "Joining",
+        "What": "Elected",
+        "Comparison": "=",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Auctoritas",
+        "Who": "Anyone",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 1,
+        "Sign": "+",
+        "WhoGets": "Anyone",
+        "Description": "Auctoritas"
+      },
+      {
+        "What": "Age",
+        "Comparison": "<",
+        "Value": 32,
+        "Stack": true,
+        "Bonus": -2,
+        "Sign": "+",
+        "Description": "Too young"
+      },
+      {
+        "What": "Ambitious",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "%",
+        "Description": "Ambition Trait"
+      },
+      {
+        "What": "Orator",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "%",
+        "Attribute": "Oratoria",
+        "Description": "Oratory traits"
+      },
+      {
+        "What": "Consul",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": -90,
+        "Sign": "%",
+        "Description": "This office is beneath a consul"
+      },
+      {
+        "What": "Mood",
+        "Comparison": "=",
+        "Value": "Confident",
+        "Bonus": 10,
+        "Sign": "%",
+        "Description": "Confident Mood"
+      },
+      {
+        "What": "Age",
+        "Comparison": ">",
+        "Value": 40,
+        "Stack": true,
+        "Bonus": -2,
+        "Sign": "+",
+        "Description": "Too old"
+      },
+      {
+        "What": "Elected",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": -999,
+        "Sign": "%",
+        "Description": "Already elected"
+      },
+      {
+        "What": "Ex Quaestor",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": -50,
+        "Sign": "%",
+        "Description": "Former Quaestor"
+      },
+      {
+        "What": "Quaestor",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": -90,
+        "Sign": "%",
+        "Description": "Re-election"
+      }
+    ]
+  },
+  "Tribunus Plebis Elections": {
+    "Image": "Speech",
+    "Circles": [
+      {
+        "Circle": "Public"
+      }
+    ],
+    "Importance": "Medium",
+    "Time": 10,
+    "Type": "Public",
+    "Elections": {
+      "Office": "Tribunus Plebis",
+      "Holders": 10
+    },
+    "Description": {
+      "Regular": "Elections for the office of Tribunus Plebis."
+    },
+    "MainStat": "Astutia",
+    "Effects": [
+      {
+        "When": "Always",
+        "Who": "Top",
+        "Count": 10,
+        "Type": "Change",
+        "What": "Elected",
+        "Detail": "Tribunus Plebis",
+        "Value": 1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Joining",
+        "What": "Auctoritas",
+        "Comparison": ">",
+        "Value": 20
+      },
+      {
+        "When": "Joining",
+        "What": "Elected",
+        "Comparison": "=",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Auctoritas",
+        "Who": "Anyone",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 1,
+        "Sign": "+",
+        "WhoGets": "Anyone",
+        "Description": "Auctoritas"
+      },
+      {
+        "What": "Age",
+        "Comparison": "<",
+        "Value": 30,
+        "Stack": true,
+        "Bonus": -2,
+        "Sign": "+",
+        "Description": "Too young"
+      },
+      {
+        "What": "Ambitious",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "%",
+        "Description": "Ambition Trait"
+      },
+      {
+        "What": "Orator",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": 10,
+        "Sign": "%",
+        "Attribute": "Oratoria",
+        "Description": "Oratory traits"
+      },
+      {
+        "What": "Consul",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": -90,
+        "Sign": "%",
+        "Description": "This office is beneath a consul"
+      },
+      {
+        "What": "Mood",
+        "Comparison": "=",
+        "Value": "Confident",
+        "Bonus": 10,
+        "Sign": "%",
+        "Description": "Confident Mood"
+      },
+      {
+        "What": "Age",
+        "Comparison": ">",
+        "Value": 60,
+        "Stack": true,
+        "Bonus": -2,
+        "Sign": "+",
+        "Description": "Too old"
+      },
+      {
+        "What": "Ex Tribunus Plebis",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": -50,
+        "Sign": "%",
+        "Description": "Former Tribunus Plebis"
+      },
+      {
+        "What": "Tribunus Plebis",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": -90,
+        "Sign": "%",
+        "Description": "Re-election"
+      },
+      {
+        "What": "Elected",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": -100,
+        "Sign": "%",
+        "Description": "Already elected"
+      }
+    ]
+  }
+}
