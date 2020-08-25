@@ -963,7 +963,8 @@
         "Comparison": "=",
         "Value": 1,
         "Bonus": 20,
-        "Sign": "%"
+        "Sign": "%",
+        "Description": "In Greece"
       }
     ]
   },
@@ -1114,6 +1115,40 @@
         "Value": "Female",
         "Bonus": -50,
         "Sign": "%"
+      }
+    ]
+  },
+  "Return to Rome": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Travelling",
+        "Value": 0
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Location",
+        "Value": "Rome"
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Location",
+        "Comparison": "=",
+        "Value": "In Greece"
       }
     ]
   },
@@ -1694,6 +1729,49 @@
         "What": "Thriving",
         "Comparison": "<",
         "Value": 0
+      }
+    ]
+  },
+  "Visit Plato's Academy": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Grecophile",
+        "Value": 1,
+        "Chance": 50
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Grecophile",
+        "Value": -1,
+        "Chance": 50
+      },
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Travelling",
+        "Value": 1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Location",
+        "Comparison": "=",
+        "Value": "In Greece"
       }
     ]
   },
