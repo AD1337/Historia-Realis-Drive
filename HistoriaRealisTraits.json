@@ -1,63 +1,66 @@
 {
   "Reference": {
     "Reference": {},
+    "Sample": {},
     "Agriculture Gods": {},
     "Bather": {},
+    "Blessings": {},
     "Business": {},
     "Commander": {},
+    "Conspirator": {},
     "Crops": {},
+    "Distraction": {},
     "Divine Ancestor": {},
-    "Sample": {},
+    "Epicurean": {},
+    "Fit": {},
+    "Fighter": {},
+    "Gambler": {},
+    "Gladiatorial Bodyguard": {},
+    "Grecophile": {},
+    "Fortuna": {},
     "Has Assassin": {},
     "Has Gladiator": {},
+    "Has Shrine At Home": {},
     "Has Rental Properties": {},
     "Helpful": {},
     "Honestas": {},
     "Honorable": {},
-    "Gladiatorial Bodyguard": {},
-    "Fighter": {},
+    "Hunter": {},
+    "Injured": {},
+    "Land Fertility": {},
     "Land Size": {},
+    "Land Type": {},
     "Law": {},
     "Lawfulness": {},
+    "Location": {},
     "Loyal": {},
+    "Memory": {},
+    "Murderer": {},
     "Kind": {},
+    "Orator": {},
+    "Oratory Style": {},
+    "Oratory Tutor": {},
     "Ordo": {},
     "Organized": {},
     "Personality": {},
     "Poet": {},
-    "Social Mobility": {},
+    "Religious": {},
+    "Reputation": {},
+    "Rider": {},
     "Scheming": {},
-    "Stressed": {},
+    "Sober": {},
+    "Social Mobility": {},
     "Social Class": {},
     "Social": {},
     "Social Rank": {},
-    "Trainer": {},
-    "Reputation": {},
-    "Sober": {},
-    "Fit": {},
-    "Land Type": {},
-    "Land Fertility": {},
-    "Orator": {},
-    "Memory": {},
-    "Rider": {},
-    "Warlike": {},
-    "Conspirator": {},
-    "Hunter": {},
-    "Injured": {},
-    "Distraction": {},
-    "Tongue": {},
-    "Murderer": {},
-    "Training": {},
-    "Oratory Tutor": {},
-    "Oratory Style": {},
-    "Writer": {},
-    "Blessings": {},
-    "Religious": {},
-    "Epicurean": {},
     "Stoic": {},
-    "Gambler": {},
-    "Fortuna": {},
-    "Has Shrine At Home": {},
+    "Stressed": {},
+    "Tongue": {},
+    "Trainer": {},
+    "Training": {},
+    "Travelling": {},
+    "Warlike": {},
+    "Writer": {},
     "OFFICES": {},
     "Elected": {},
     "-- CURSUS HONORUM --": {},
@@ -782,6 +785,9 @@
     }
   },
   "Location": {
+    "0": {
+      "Name": "In Rome"
+    },
     "1": {
       "Name": "In Greece"
     },
@@ -1460,6 +1466,20 @@
     "3": {
       "Name": "Trained",
       "Health": 1
+    }
+  },
+  "Travelling": {
+    "1": {
+      "Name": "Starting Trip"
+    },
+    "2": {
+      "Name": "Middle of Trip"
+    },
+    "3": {
+      "Name": "Finishing Trip"
+    },
+    "4": {
+      "Name": "End of Trip"
     }
   },
   "Warlike": {
