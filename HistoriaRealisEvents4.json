@@ -823,6 +823,48 @@
       }
     ]
   },
+  "Go to Athens": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Oratoria",
+    "Requirements": [
+      {
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 50,
+        "IsCost": true
+      },
+      {
+        "What": "Location",
+        "Comparison": "=",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Commander",
+        "Comparison": ">",
+        "Value": 0,
+        "Bonus": 10,
+        "Sign": "%",
+        "Attribute": "Martialis"
+      }
+    ],
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Location",
+        "Value": "In Athens"
+      }
+    ]
+  },
   "Insult": {
     "Image": "Speech",
     "IsOn": true,
@@ -3940,6 +3982,14 @@
         "Bonus": -30,
         "Sign": "+",
         "Description": "Ex Consul"
+      },
+      {
+        "What": "Location",
+        "Comparison": "!=",
+        "Value": 0,
+        "Bonus": -50,
+        "Sign": "%",
+        "Description": "Away from Rome"
       }
     ]
   },
