@@ -823,7 +823,7 @@
       }
     ]
   },
-  "Go to Athens": {
+  "Go to Greece": {
     "Image": "Speech",
     "IsOn": true,
     "Circles": [
@@ -834,12 +834,14 @@
     "MainStat": "Oratoria",
     "Requirements": [
       {
+        "When": "Creating",
         "What": "Gold",
         "Comparison": ">",
         "Value": 50,
         "IsCost": true
       },
       {
+        "When": "Creating",
         "What": "Location",
         "Comparison": "=",
         "Value": 0
@@ -1140,15 +1142,21 @@
         "Who": "Creator",
         "Type": "Set",
         "What": "Location",
-        "Value": "Rome"
+        "Value": "In Rome"
       }
     ],
     "Requirements": [
       {
         "When": "Creating",
         "What": "Location",
-        "Comparison": "=",
-        "Value": "In Greece"
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Travelling",
+        "Comparison": ">=",
+        "Value": 4
       }
     ]
   },
@@ -1740,7 +1748,7 @@
         "Circle": "Peers"
       }
     ],
-    "MainStat": "Pietas",
+    "MainStat": "Oratoria",
     "Effects": [
       {
         "When": "Success",
@@ -1771,7 +1779,7 @@
         "When": "Creating",
         "What": "Location",
         "Comparison": "=",
-        "Value": "In Greece"
+        "Value": 1
       }
     ]
   },
