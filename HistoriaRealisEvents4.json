@@ -1,6 +1,6 @@
 {
   "REF": {
-    "-------------------- OTHER --------------------": "Ex Tribunus Plebis",
+    "-------------------- OTHER --------------------": "(if no traits show up, try opening the Traits sheet so that this one can load from that one)",
     "Creating": "Joining",
     ">": "<=",
     "%": "-",
@@ -34,7 +34,7 @@
         "Bonus": "%"
       }
     ],
-    "Time": "Ex Tribunus Plebis"
+    "Time": "If no traits are showing up, try opening the Traits sheet so that this one can load from that one."
   },
   "Begin Training": {
     "IsOn": true,
@@ -832,6 +832,22 @@
       }
     ],
     "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Travelling",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Location",
+        "Value": 1
+      }
+    ],
     "Requirements": [
       {
         "When": "Creating",
@@ -845,25 +861,6 @@
         "What": "Location",
         "Comparison": "=",
         "Value": 0
-      }
-    ],
-    "Modifiers": [
-      {
-        "What": "Commander",
-        "Comparison": ">",
-        "Value": 0,
-        "Bonus": 10,
-        "Sign": "%",
-        "Attribute": "Martialis"
-      }
-    ],
-    "Effects": [
-      {
-        "When": "Success",
-        "Who": "Creator",
-        "Type": "Change",
-        "What": "Location",
-        "Value": 1
       }
     ]
   },
@@ -1780,6 +1777,61 @@
         "What": "Location",
         "Comparison": "=",
         "Value": 1
+      },
+      {
+        "When": "Creating",
+        "What": "Travelling",
+        "Comparison": "<",
+        "Value": 4
+      }
+    ]
+  },
+  "Visit Stoa Poikile": {
+    "Image": "Speech",
+    "IsOn": true,
+    "Circles": [
+      {
+        "Circle": "Peers"
+      }
+    ],
+    "MainStat": "Oratoria",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Grecophile",
+        "Value": 1,
+        "Chance": 50
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Grecophile",
+        "Value": -1,
+        "Chance": 50
+      },
+      {
+        "When": "Always",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Travelling",
+        "Value": 1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Location",
+        "Comparison": "=",
+        "Value": 1
+      },
+      {
+        "When": "Creating",
+        "What": "Travelling",
+        "Comparison": "<",
+        "Value": 4
       }
     ]
   },
@@ -3340,6 +3392,48 @@
         "Who": "Creator",
         "What": "Social",
         "Comparison": ">=",
+        "Value": 3
+      }
+    ]
+  },
+  "Befriend": {
+    "Difficulty": "Easy",
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Agriculture Gods",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Crops",
+        "Value": 1,
+        "Chance": 20
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Land Size",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Gold",
+        "Comparison": ">",
+        "Value": 10,
+        "IsCost": true
+      },
+      {
+        "When": "Creating",
+        "What": "Agriculture Gods",
+        "Comparison": "<",
         "Value": 3
       }
     ]
