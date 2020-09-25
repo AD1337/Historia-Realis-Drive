@@ -1,6 +1,6 @@
 {
   "REF": {
-    "-------------------- OTHER --------------------": "(if no traits show up, try opening the Traits sheet so that this one can load from that one)",
+    "-------------------- OTHER --------------------": "Ex Tribunus Plebis",
     "Creating": "Joining",
     ">": "<=",
     "%": "-",
@@ -34,7 +34,7 @@
         "Bonus": "%"
       }
     ],
-    "Time": "If no traits are showing up, try opening the Traits sheet so that this one can load from that one."
+    "Time": "Ex Tribunus Plebis"
   },
   "Begin Training": {
     "IsOn": true,
@@ -3396,6 +3396,39 @@
       }
     ]
   },
+  "Atone for Murder": {
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Murderer",
+        "Value": -1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Honestas",
+        "Value": -1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Murderer",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Creating",
+        "What": "Eleusinian Initiate",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
   "Befriend": {
     "Difficulty": "Easy",
     "MainStat": "Pietas",
@@ -3435,6 +3468,39 @@
         "What": "Agriculture Gods",
         "Comparison": "<",
         "Value": 3
+      }
+    ]
+  },
+  "Bond Over Mysteries": {
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Relationships.$Target.Relationship",
+        "Value": 10
+      },
+      {
+        "When": "Success",
+        "Who": "Target",
+        "Type": "Change",
+        "What": "Relationships.$Creator.Relationship",
+        "Value": 10
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "What": "Eleusinian Initiate",
+        "Comparison": ">",
+        "Value": 0
+      },
+      {
+        "When": "Targeting",
+        "What": "Eleusinian Initiate",
+        "Comparison": ">",
+        "Value": 0
       }
     ]
   },
@@ -3694,6 +3760,104 @@
       }
     ]
   },
+  "Initiate in the Lesser Eleusinian Mysteries": {
+    "Image": "Speech",
+    "IsOn": true,
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Eleusinian Initiate",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Eleusinian Knowledge",
+        "Value": 1,
+        "Chance": 50
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Location",
+        "Comparison": "=",
+        "Value": 1
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Eleusinian Initiate",
+        "Comparison": "=",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Murderer",
+        "Who": "Creator",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": -10,
+        "Sign": "+"
+      }
+    ]
+  },
+  "Initiate in the Greater Eleusinian Mysteries": {
+    "Image": "Speech",
+    "IsOn": true,
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Epoptes",
+        "Value": 1
+      },
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Eleusinian Knowledge",
+        "Value": 1,
+        "Chance": 50
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Location",
+        "Comparison": "=",
+        "Value": 1
+      },
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Eleusinian Initiate",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ],
+    "Modifiers": [
+      {
+        "What": "Murderer",
+        "Who": "Creator",
+        "Comparison": ">",
+        "Value": 0,
+        "Stack": true,
+        "Bonus": -10,
+        "Sign": "+"
+      }
+    ]
+  },
   "Lie about the Auspices": {
     "Image": "Speech",
     "IsOn": true,
@@ -3844,6 +4008,34 @@
         "When": "Creating",
         "Who": "Creator",
         "What": "Social",
+        "Comparison": ">",
+        "Value": 0
+      }
+    ]
+  },
+  "Prepare for the Greater Eleusinian Mysteries": {
+    "MainStat": "Pietas",
+    "Effects": [
+      {
+        "When": "Success",
+        "Who": "Creator",
+        "Type": "Change",
+        "What": "Eleusinian Knowledge",
+        "Value": 1
+      },
+      {
+        "When": "Failure",
+        "Who": "Creator",
+        "Type": "Set",
+        "What": "Eleusinian Knowledge",
+        "Value": -1
+      }
+    ],
+    "Requirements": [
+      {
+        "When": "Creating",
+        "Who": "Creator",
+        "What": "Eleusinian Initiate",
         "Comparison": ">",
         "Value": 0
       }
